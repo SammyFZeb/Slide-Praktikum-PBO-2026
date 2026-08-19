@@ -1,0 +1,42 @@
+name: Deploy Slidev Multi-Branch
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'minggu-*' # Otomatis jalan untuk branch minggu-1, minggu-2, dst.
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+
+      - name: Setup @antfu/ni
+        run: npm i -g @antfu/ni
+
+      - name: Install dependencies
+        run: nci
+
+      - name: Build with Dynamic Base Path
+        run: |
+          REPO_NAME=${{ github.event.repository.name }}
+          BRANCH_NAME=${{ github.ref_name }}
+          
+          # Membangun slidev dengan base URL /nama-repo/nama-branch/
+          nr build --base /${REPO_NAME}/${BRANCH_NAME}/
+
+      - name: Deploy to gh-pages branch
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
+          target-folder: ${{ github.ref_name }} # Hasil build masuk ke folder minggu-1, minggu-2, dst.
+          clean: false # Mencegah folder minggu lain terhapus
