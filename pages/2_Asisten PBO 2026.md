@@ -5,9 +5,7 @@ layout: full
 
 # Asisten Praktikum PBO 2024
 
-<br>
-
-<div class='grid grid-cols-6 gap-16 py-4'>
+<div class='grid grid-cols-6 gap-1 py-4'>
    <div class='flex flex-col items-center col-span-2'>
     <img src="/img/140810240074.png" class="w-20 h-20 object-cover rounded-full mb-4">
     <span class='font-semibold'>Alif Al Husaini</span>
@@ -42,11 +40,11 @@ layout: full
  <div class='flex flex-col items-center col-span-2 text-8'>
    Kelas C
  </div>
- <!--<div class='flex flex-col items-center col-span-2'>
-   <img src="/img/zefa.jpg" class="w-20 h-20 object-cover rounded-full mb-4">
+ <div class='flex flex-col items-center col-span-2'>
+   <!--<img src="/img/zefa.jpg" class="w-20 h-20 object-cover rounded-full mb-4">-->
    <span class='font-semibold'>Muhammad Ichsan Firdaus</span>
    <span class='text-xs'>140810220025</span>
- </div> -->
+ </div> 
 </div>
 
 
