@@ -48,92 +48,93 @@ src: ./pages/7_Materi Pertemuan 1.md
 ---
 
 ---
-src: ./pages/8_Judul Struktur Kode Java.md
+src: ./pages/8_Judul Konsep PBO.md
 ---
 
 ---
-src: ./pages/9_Struktur Kode Java 1.md
+src: ./pages/9_Konsep PBO 1.md
 ---
 
 ---
-src: ./pages/10_Struktur Kode Java 2.md
+src: ./pages/10_Konsep PBO 2.md
 ---
 
 ---
-src: ./pages/11_Judul Membuat Objek.md
+src: ./pages/11_Konsep PBO 3.md
 ---
 
 ---
-src: ./pages/12_Membuat Objek.md
+src: ./pages/12_Judul Struktur Kode Java.md
 ---
 
 ---
-src: ./pages/13_Judul Input Output.md
+src: ./pages/13_Struktur Kode Java 1.md
 ---
 
 ---
-src: ./pages/14_Input Output.md
+src: ./pages/14_Struktur Kode Java 2.md
 ---
 
 ---
-src: ./pages/15_Judul Basic Statement.md
+src: ./pages/15_Judul Membuat Objek.md
 ---
 
 ---
-src: ./pages/16_Basic Statement.md
+src: ./pages/16_Membuat Objek.md
 ---
 
 ---
-src: ./pages/17_Judul Compile Run.md
+src: ./pages/17_Static Method 1.md
 ---
 
 ---
-src: ./pages/18_Compile Run.md
+src: ./pages/18_Static Method 2.md
 ---
 
 ---
-src: ./pages/19_Important Things.md
+src: ./pages/19_Judul Input Output.md
 ---
 
 ---
-src: ./pages/20_Judul Built In Method.md
+src: ./pages/20_Input Output.md
 ---
 
 ---
-src: ./pages/21_Built In Method 1.md
+src: ./pages/21_Judul Basic Statement.md
 ---
 
 ---
-src: ./pages/22_Built In Method 2.md
----
----
-src: ./pages/23_Snippets.md
+src: ./pages/22_Basic Statement.md
 ---
 
 ---
-src: ./pages/23_Judul Exercise.md
+src: ./pages/23_Judul Compile Run.md
 ---
 
 ---
-src: ./pages/24_Exercise1.md
+src: ./pages/24_Compile Run.md
 ---
 
 ---
-src: ./pages/25_Exercise2.md
+src: ./pages/25_Important Things.md
 ---
 
 ---
-src: ./pages/26_Teknis Pengumpulan 1.md
+src: ./pages/26_Judul Tugas.md
 ---
 
 ---
-src: ./pages/27_Teknis Pengumpulan 2.md
+src: ./pages/27_Tugas.md
 ---
 
 ---
-src: ./pages/28_Deadline.md
+src: ./pages/28_Teknis Pengumpulan.md
 ---
 
 ---
-src: ./pages/29_Terima Kasih.md
+src: ./pages/29_Deadline.md
+---
+
+---
+src: ./pages/30_Terima Kasih.md
 ---

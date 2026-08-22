@@ -22,4 +22,4 @@ class: text-center
 </div>-->
 
 <br>
-    Pengerjaan dan pengumpulan tugas akan diinformasikan dikemudian hari.
+    Teknis pengumpulan tugas akan diinformasikan dikemudian hari.
