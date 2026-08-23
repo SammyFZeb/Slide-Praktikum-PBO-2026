@@ -16,4 +16,4 @@ public class Test {
 }
 ```
 
-Instansiasi class menjadi object dilakukan dengan keyword `new` diikuti dengan class yang akan dijadikan object
+Instansiasi class menjadi object dilakukan dengan keyword `new` diikuti dengan class yang akan dijadikan object. Class ini disebut juga sebagai _concrete class_ (akan dibahas di pertemuan selanjutnya).

@@ -14,7 +14,6 @@ layout: default
 
 - Program dalam bentuk instruksi linier (step-by-step).
 - Data dan fungsi terpisah; fungsi memanipulasi data global/lokal.
-- Sulit dikelola saat basis kode menjadi besar (*complex & tightly coupled*).
 </div>
 
 <div>
@@ -22,7 +21,6 @@ layout: default
 
 - Program diorganisasi menjadi entitas-entitas mandiri bernama Objek.
 - Data dan operasi yang memanipulasinya disatukan ke dalam satu kesatuan.
-- Lebih modular, terstruktur, dan mudah dikembangkan (*scalable*).
 </div>
 
 </div>
