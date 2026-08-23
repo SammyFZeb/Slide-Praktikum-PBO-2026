@@ -96,6 +96,10 @@ src: ./pages/20_Input Output.md
 ---
 
 ---
+src: ./pages/20_Jenis Method Input.md
+---
+
+---
 src: ./pages/21_Judul Basic Statement.md
 ---
 
