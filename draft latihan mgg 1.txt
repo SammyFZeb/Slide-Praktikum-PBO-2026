@@ -1,0 +1,14 @@
+Narasi soal:
+Anda diminta membuat program Kasir Mini. Program ini akan dibuat dalam dua tahap rilis untuk memastikan fungsi perhitungannya berjalan baik sebelum ditambahkan fitur keranjang belanja.
+
+Soal 1
+Buat sebuah objek yang dapat menampung nama barang, harga satuan, serta jumlah barang yang akan dibelanjakan. Ketiga nilai tersebut didapatkan melalui masukkan terminal dan disimpan ke dalam objek. Kemudian tampilkan subtotal barang dengan mengalikan harga barang dengan jumlah barang.
+Hint: Buat class non public di Main.java dengan properti namaBarang, hargaSatuan, jumlah
+
+Soal 2
+Seorang pelanggan bisa saja membeli satu barang, tetapi sangat mungkin juga untuk membeli dua atau lebih barang. Implementasikan mekanisme perulangan untuk input barang yang akan dibelanjakan, setiap kali memasukkan satu barang, pengguna dapat memilih apakah ingin memasukkan barang lain atau tidak. Selesai memasukkan semua barang, pengguna bisa melihat semua daftar belanjaan (nama barang, harga, jumlah, subtotal). 
+Hint: Buat array dengan tipe objek dari soal sebelumnya, batas ukuran array dibebaskan.
+
+Soal 3 (Bonus)
+Buat mekanisme untuk menghitung subtotal dari serangkaian data produk yang telah dimasukkan.
+Hint: Gunakan perulangan untuk mengakses setiap objek dalam array lalu jumlahkan nilai dari properti subtotal.

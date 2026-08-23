@@ -108,37 +108,57 @@ src: ./pages/22_Basic Statement.md
 ---
 
 ---
-src: ./pages/23_Judul Compile Run.md
+src: ./pages/23_Judul Array.md
 ---
 
 ---
-src: ./pages/24_Compile Run.md
+src: ./pages/24_Array.md
 ---
 
 ---
-src: ./pages/25_Important Things.md
+src: ./pages/25_Judul Compile Run.md
 ---
 
 ---
-src: ./pages/25_Alur Compile dan Run Java.md
+src: ./pages/26_Compile Run.md
 ---
 
 ---
-src: ./pages/26_Judul Tugas.md
+src: ./pages/27_Important Things.md
 ---
 
 ---
-src: ./pages/27_Tugas.md
+src: ./pages/27_Alur Compile dan Run Java.md
 ---
 
 ---
-src: ./pages/28_Teknis Pengumpulan.md
+src: ./pages/28_Judul Latihan.md
 ---
 
 ---
-src: ./pages/29_Deadline.md
+src: ./pages/29_Latihan Soal 1.md
 ---
 
 ---
-src: ./pages/30_Terima Kasih.md
+src: ./pages/30_Latihan Soal 2.md
+---
+
+---
+src: ./pages/31_Judul Tugas.md
+---
+
+---
+src: ./pages/32_Tugas.md
+---
+
+---
+src: ./pages/33_Teknis Pengumpulan.md
+---
+
+---
+src: ./pages/34_Deadline.md
+---
+
+---
+src: ./pages/35_Terima Kasih.md
 ---
