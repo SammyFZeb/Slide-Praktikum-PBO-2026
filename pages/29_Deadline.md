@@ -10,7 +10,7 @@ class: text-center
 
   #### Kelas A:
   07 September 2026
-  
+
   </div>
   <div>
 
@@ -28,4 +28,4 @@ class: text-center
 
 <br>
 
-**Waktu yang dilihat adalah waktu last commit.** Jika ada yang commit melewati deadline walaupun sudah commit sebelumnya akan dianggap telat
+**Waktu yang dilihat adalah waktu last commit.** Jika ada yang commit melewati deadline walaupun sudah commit sebelumnya akan dianggap terlambat.

@@ -1,13 +1,13 @@
 # Compile and Run
 
-## - Compile File Java
+### 1. Compile File Java
 Untuk compile file java run command berikut di terminal:
 ```
 javac FileName.java
 ```
 Command diatas akan menghasilkan file baru dengan nama `FileName.java`
 
-## - Run File Java
+### 2. Run File Java
 Untuk menjalankan file hasil compile run command berikut di terminal:
 ```
 java FileName

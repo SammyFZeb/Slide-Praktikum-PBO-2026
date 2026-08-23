@@ -1,5 +1,4 @@
 # Static Method
-<br>
     
 ```java {all|8-11|13-16|all}
 public class Ship {

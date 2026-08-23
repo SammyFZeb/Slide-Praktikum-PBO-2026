@@ -1,7 +1,6 @@
 # Membuat Object dari Class
 
-<br>
-<br>
+
 
 ```java {all|3|all}
 public class Test {

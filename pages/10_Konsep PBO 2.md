@@ -1,10 +1,11 @@
 ---
-layout: center
+layout: default
 ---
+# Representasi Objek 
 
-<div class="max-w-2xl mx-auto text-left">
+<div class="text-left">
 
-<p class="text-center mb-6">
+<p>
   Setiap entitas di dunia nyata dapat direpresentasikan menjadi objek di dalam kode:
 </p>
 

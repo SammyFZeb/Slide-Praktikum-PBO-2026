@@ -8,4 +8,4 @@ class: text-center
 Do you have any questions?
 Please use respective class discussion channel on Discord.
 
-Semangat terus menjalani kuilahnya!! 🔥🔥🔥
+Semangat terus menjalani kuilahnya! 🔥🔥🔥

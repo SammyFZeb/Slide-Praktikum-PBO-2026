@@ -4,6 +4,7 @@ class: text-center
 ---
 
 # Teknis Pengumpulan
+  Teknis pengumpulan tugas akan diinformasikan dikemudian hari.
 <!--Pengerjaan dan pengumpulan tugas akan di**informasikan nanti**
 
 <div grid="~ cols-2 gap-2" style="margin-top: 48px">
@@ -21,5 +22,4 @@ class: text-center
   </div>
 </div>-->
 
-<br>
-    Teknis pengumpulan tugas akan diinformasikan dikemudian hari.
+

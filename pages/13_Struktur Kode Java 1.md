@@ -13,7 +13,6 @@ public class HelloWorld {
   <div>
 
   ## Class 
-  <br>
 
   - `public` : Access Modifier
   - `class` : Class keyword
@@ -24,7 +23,6 @@ public class HelloWorld {
   <div>
 
   ## Method 
-  <br>
 
   - `static` : Static keyword
   - `void`: Return type

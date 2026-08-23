@@ -36,10 +36,6 @@ src: ./pages/4_Penilaian.md
 ---
 
 ---
-src: ./pages/5_Scope Pembelajaran.md
----
-
----
 src: ./pages/6_Judul Materi Pertemuan.md
 ---
 
