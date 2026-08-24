@@ -5,7 +5,7 @@ Untuk compile file java run command berikut di terminal:
 ```
 javac FileName.java
 ```
-Command diatas akan menghasilkan file baru dengan nama `FileName.java`
+Command diatas akan menghasilkan file baru dengan nama `FileName.class`
 
 ### 2. Run File Java
 Untuk menjalankan file hasil compile run command berikut di terminal:
