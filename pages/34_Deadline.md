@@ -9,7 +9,7 @@ class: text-center
   <div>
 
   #### Kelas A:
-  07 September 2026
+  30 Agustus 2026
 
   </div>
   <div>
