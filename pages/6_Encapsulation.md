@@ -25,7 +25,7 @@ layout: default
 <!-- Kolom Gambar -->
 <div class="flex justify-center items-center p-4">
   <img 
-    src="/img/Encapsulation.png" 
+    src="/img/encapsulation.png" 
     alt="Procedural vs OOP" 
     class="max-h-75 rounded-lg shadow-md object-contain"
   />
