@@ -1,42 +1,61 @@
 ---
 layout: default
 ---
+
 # Soal 1
 
-Buat program CLI berbasis menu interaktif:
+<p class="text-sm opacity-70 mt-1">
+Buatlah program Java interaktif untuk mengelola data produk toko.
+</p>
 
-<div class="grid grid-cols-[1fr_0.8fr] gap-8 items-start mt-4">
-  <div>
-  
-  <p class='text-base'>
+<div class="grid grid-cols-[1fr_0.85fr] gap-6 items-start mt-4 text-sm">
 
-  1. **Buat class entitas (`Product` dan `Customer`).**
-  * Class `Product` menyimpan: `nama_produk`, `kategori`, `harga`, `stok_awal` dan method `hitung_subtotal()`.
-  * Class `Customer` menyimpan: `customer_id`, `nama_customer`.
-  2. **Objek Customer:** Buat objek `Customer` di method Main. ID dan nama dibebaskan.
-  3. **Mekanisme Tambah Produk:** Buatlah mekanisme menambahkan produk, dimana semua atribut di kelas Produk harus didapatkan dari input.
+<div>
 
-  </p>
-  </div>
-  
-  <div class="text-xs bg-gray-900 border border-gray-700 rounded-lg p-4 font-mono leading-relaxed">
-    <div class="text-gray-400 mb-2 border-b border-gray-700 pb-1 uppercase tracking-wider text-[10px]">Contoh Output (Input Menu: 1)</div>
-    
-    === SISTEM MANAJEMEN TOKO ===
-    1. Tambahkan Produk
-    2. Tampilkan semua produk 
-    3. Transaksi
+### 1. Class `Product`
 
-    Pilih menu : 1
+Buat class <code>Product</code> dengan atribut: <code>nama_produk</code>, <code>kategori</code>, <code>harga</code>, <code>stok_awal</code>
 
-    ================================
-    Nama: baju fardan
-    Kategori: barang bekas
-    Harga:  17500
-    Stok Awal: 1
+**Ketentuan:**
 
+- Semua atribut bersifat <code>private</code>.
+- Buat constructor berparameter.
+- Buat getter dan setter untuk seluruh atribut.
+<p></p>
 
+### 2. Class `Main`
 
-  </div>
+Buat menu interaktif berulang menggunakan `Scanner`:
+
+1. Tambah Produk
+2. Tampilkan Produk
+
+</div>
+
+<div class="text-[10px] bg-gray-900 border border-gray-700 rounded-lg p-4 font-mono leading-6 max-h-[410px]">
+
+<div class="text-gray-400 mb-2 border-b border-gray-700 pb-1 uppercase tracking-wider text-[9px]">
+Contoh Output
+</div>
+
+═══ SISTEM MANAJEMEN TOKO ═══
+
+1. Tambah Produk
+2. Tampilkan Produk
+
+Pilih menu: 1
+<br>
+──────────────────────────
+<br>
+Masukkan Data Produk
+
+Nama Produk: Ijazah Joko  
+Kategori: Barang Antik  
+Harga: 2500  
+Stok Awal: 1
+
+Produk berhasil ditambahkan!
+
+</div>
 
 </div>

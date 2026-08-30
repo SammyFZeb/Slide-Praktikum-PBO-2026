@@ -16,8 +16,8 @@ layout: default
 
 <h3 class="text-base font-bold text-blue-400">Syarat Enkapsulasi</h3>
 
-* Mendeklarasi variabel sebagai `private`.
-* Membuat method `public` setter dan getter untuk memodifikasi dan mengakses variabel tadi.
+- Mendeklarasi variabel sebagai `private`.
+- Membuat method `public` setter dan getter untuk memodifikasi dan mengakses variabel tadi.
 </div>
 
 </div>
@@ -25,22 +25,10 @@ layout: default
 <!-- Kolom Gambar -->
 <div class="flex justify-center items-center p-4">
   <img 
-    src="/img/encapsulation.png" 
+    src="/img/Encapsulation.png" 
     alt="Procedural vs OOP" 
     class="max-h-75 rounded-lg shadow-md object-contain"
   />
 </div>
 
 </div>
-
-
- 
-
-
-
-
-
-
-
-
-

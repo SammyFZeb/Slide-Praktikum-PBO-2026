@@ -28,6 +28,10 @@ src: ./pages/2_Demo_Program.md
 ---
 
 ---
+src: ./pages/2.1_Studi_Kasus_Mahasiswa.md
+---
+
+---
 src: ./pages/3_Judul_Materi_Pertemuan_2.md
 ---
 
@@ -113,4 +117,20 @@ src: ./pages/23_Latihan_Soal_1.md
 
 ---
 src: ./pages/24_Latihan_Soal_2.md
+---
+
+---
+src: ./pages/25_Assignment.md
+---
+
+---
+src: ./pages/26_Teknis_Pengumpulan.md
+---
+
+---
+src: ./pages/27_Deadline_Pengumpulan.md
+---
+
+---
+src: ./pages/28_Terimakasih.md
 ---
