@@ -2,19 +2,19 @@
 layout: default
 ---
 
-# Contoh this & super
+# Contoh this & super (Studi Kasus Game)
 
 <div class="grid grid-cols-[45%_50%] gap-8 items-start mt-4">
 
 <!-- Kolom Teks -->
 <div class="text-left text-base leading-normal space-y-4">
   <p>
-    Berikut adalah implementasi penggunaan keyword <code>this</code> dan <code>super</code> dalam Java:
+    Mari kita terapkan *constructor* pada studi kasus karakter game sebelumnya:
   </p>
   <ul class="list-disc list-inside space-y-2">
-    <li><code>super(nama)</code> memanggil konstruktor milik <i>parent class</i> (<code>Hewan</code>).</li>
-    <li><code>this.warnaBulu</code> merujuk pada atribut milik objek <code>Kucing</code> itu sendiri.</li>
-    <li><code>super.nama</code> mengakses atribut dari class induk jika diperlukan secara eksplisit.</li>
+    <li><code>this.nama</code> dipakai di class <code>Character</code> untuk menegaskan bahwa kita merujuk pada atribut milik *class* tersebut (bukan parameter).</li>
+    <li><code>super(nama, hp)</code> di class <code>Warrior</code> berfungsi memanggil *constructor* milik *parent class* (<code>Character</code>) untuk menginisialisasi atribut dasar.</li>
+    <li><code>super.nama</code> memanggil atribut dari *parent* secara eksplisit (walaupun bisa dipanggil langsung tanpa `super` jika tipenya `protected`).</li>
   </ul>
 </div>
 
@@ -22,27 +22,29 @@ layout: default
 <div class="text-xs leading-tight">
 
 ```java
-class Hewan {
+class Character {
     protected String nama;
+    protected int hp;
 
-    public Hewan(String nama) {
-        // 'this' merujuk ke atribut class ini
+    public Character(String nama, int hp) {
+        // 'this' membedakan atribut milik class dengan parameter
         this.nama = nama; 
+        this.hp = hp;
     }
 }
 
-class Kucing extends Hewan {
-    private String warnaBulu;
+class Warrior extends Character {
+    private String tipePedang;
 
-    public Kucing(String nama, String warnaBulu) {
-        // 'super' memanggil constructor parent (Hewan)
-        super(nama); 
-        this.warnaBulu = warnaBulu;
+    public Warrior(String nama, int hp, String tipePedang) {
+        // 'super' memanggil dan mengirim data ke constructor parent
+        super(nama, hp); 
+        this.tipePedang = tipePedang;
     }
     
     public void info() {
         System.out.println("Nama: " + super.nama);
-        System.out.println("Warna: " + this.warnaBulu);
+        System.out.println("Senjata: " + this.tipePedang);
     }
 }
 ```

@@ -9,35 +9,35 @@ layout: default
 <!-- Kolom Teks -->
 <div class="text-left text-base leading-normal space-y-4">
   <ul class="list-disc list-inside space-y-2">
-    <li>Overloading sebuah constructor berarti membuat banyak konstruktor yang memiliki parameter yang berbeda-beda.</li>
+    <li><i>Overloading</i> pada <i>constructor</i> berarti membuat banyak konstruktor yang memiliki jumlah atau tipe parameter yang berbeda-beda.</li>
+    <li>Pada studi kasus game kita, beberapa karakter (seperti NPC) mungkin hanya butuh diinisialisasi menggunakan standar bawaan, sementara karakter *boss* butuh ditentukan status HP-nya secara spesifik di awal.</li>
   </ul>
-
 </div>
 
 <!-- Kolom Kode -->
 <div class="text-[0.7rem] leading-tight">
 
 ```java
-public class Hewan {
-    private String nama;
-    private int umur;
+public class Character {
+    protected String nama;
+    protected int hp;
 
-    // Default (tanpa parameter)
-    public Hewan() {
-        this.nama = "Anonim";
-        this.umur = 0;
+    // 1. Default (tanpa parameter)
+    public Character() {
+        this.nama = "NPC Misterius";
+        this.hp = 100;
     }
 
-    // Parameter nama
-    public Hewan(String nama) {
+    // 2. Hanya parameter nama (HP otomatis)
+    public Character(String nama) {
         this.nama = nama;
-        this.umur = 0;
+        this.hp = 100; // nilai default
     }
 
-    // Parameter nama dan umur
-    public Hewan(String nama, int umur) {
+    // 3. Parameter nama dan hp (custom lengkap)
+    public Character(String nama, int hp) {
         this.nama = nama;
-        this.umur = umur;
+        this.hp = hp;
     }
 }
 ```

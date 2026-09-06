@@ -46,7 +46,15 @@ src: ./pages/06_Catatan_Inheritance.md
 ---
 
 ---
-src: ./pages/07_Contoh_Inheritance.md
+src: ./pages/07_Contoh_Inheritance_Konsep.md
+---
+
+---
+src: ./pages/07b_Contoh_Inheritance_Kode_Parent.md
+---
+
+---
+src: ./pages/07c_Contoh_Inheritance_Kode_Child.md
 ---
 
 ---
@@ -90,7 +98,7 @@ src: ./pages/12c_Method_Overloading_Syarat.md
 ---
 
 ---
-src: ./pages/13_Implementasi_Overloading_Hewan.md
+src: ./pages/13_Implementasi_Overloading_Attack.md
 ---
 
 ---
