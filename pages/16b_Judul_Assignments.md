@@ -4,4 +4,5 @@ class: text-center
 ---
 
 # Assignments
-note : edit ini
+
+Silahkan cek Classmoji masing-masing, tugas dapat diakses setelah dipublish dan diinformasikan oleh asprak kelas masing-masing.
