@@ -94,10 +94,6 @@ src: ./pages/12_Method_Overloading.md
 ---
 
 ---
-src: ./pages/12c_Method_Overloading_Syarat.md
----
-
----
 src: ./pages/13_Implementasi_Overloading_Attack.md
 ---
 
