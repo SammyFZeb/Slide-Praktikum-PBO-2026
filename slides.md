@@ -110,6 +110,10 @@ src: ./pages/15b_Judul_Latihan.md
 ---
 
 ---
+src: ./pages/16_Latihan.md
+---
+
+---
 src: ./pages/16b_Judul_Assignments.md
 ---
 

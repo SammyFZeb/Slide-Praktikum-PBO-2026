@@ -5,45 +5,47 @@ layout: default
 # Contoh penerapan inheritance 
 *(studi kasus is-a relationship / general to specialization)*
 
-<div class="grid grid-cols-[55%_40%] gap-8 items-center mt-4">
+<div class="grid grid-cols-[45%_50%] gap-8 items-center mt-2">
 
 <!-- Kolom Teks -->
-<div class="text-left text-base leading-normal space-y-4">
+<div class="text-left text-[0.8rem] leading-normal space-y-3">
   <p>
-    Misal diketahui sebuah sistem game yang terdapat class <code>Character</code> sebagai sistem dasar (<i>parent class</i>) untuk sistem turunannya. 
+    Pada sistem game ini, terdapat class <code>Character</code> sebagai sistem dasar (<i>parent class</i>) untuk turunan karakter lainnya. 
   </p>
   <p>
-    Game tersebut memiliki tiga spesialisasi (<i>child class</i>): 
+    Sistem game tersebut memiliki tiga spesialisasi (<i>child class</i>): 
   </p>
-  <ul class="list-disc list-inside space-y-2">
-    <li><b>Warrior</b> (pengguna pedang)</li>
-    <li><b>Mage</b> (pengguna sihir)</li>
-    <li><b>Archer</b> (pengguna busur & serangan jarak jauh)</li>
+  <ul class="list-disc list-inside space-y-1">
+    <li><b>Warrior</b> (Serangan jarak dekat)</li>
+    <li><b>Mage</b> (Serangan area sihir)</li>
+    <li><b>Archer</b> (Serangan jarak jauh)</li>
   </ul>
   <p>
-    Setiap spesialisasi mewarisi atribut dasar dari <code>Character</code> (seperti HP atau nama), tapi memiliki karakteristik serangan yang berbeda-beda.
+    Setiap spesialisasi mewarisi seluruh atribut dan method dasar dari <code>Character</code> (seperti <code>name</code>, <code>healthPoint</code>, dll), namun bisa memiliki atribut tambahan yang spesifik sesuai spesialisasinya (contoh: <code>rage</code> untuk Warrior).
   </p>
 </div>
 
 <!-- Kolom Gambar -->
-<div class="flex justify-center items-center">
+<div class="flex justify-center items-center mt-4">
 
-```mermaid {scale: 0.65, theme: 'dark'}
+```mermaid {scale: 0.55, theme: 'dark'}
 classDiagram
     direction TB
     class Character {
-        +String nama
-        +int hp
-        +bergerak()
+        +String name
+        +double healthPoint
+        +double physicalAttack
+        +double defense
+        +attack(target, distance)
     }
     class Warrior {
-        +tebasPedang()
+        +double rage
     }
     class Mage {
-        +lemparBolaApi()
+        +double manaPoint
     }
     class Archer {
-        +tembakPanah()
+        +double arrowCount
     }
     
     Character <|-- Warrior

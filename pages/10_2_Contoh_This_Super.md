@@ -9,42 +9,40 @@ layout: default
 <!-- Kolom Teks -->
 <div class="text-left text-base leading-normal space-y-4">
   <p>
-    Mari kita terapkan *constructor* pada studi kasus karakter game sebelumnya:
+    Mari kita perhatikan bagaimana penggunaan <code>this</code> dan <code>super</code> di dalam *constructor* untuk karakter game kita:
   </p>
   <ul class="list-disc list-inside space-y-2">
-    <li><code>this.nama</code> dipakai di class <code>Character</code> untuk menegaskan bahwa kita merujuk pada atribut milik *class* tersebut (bukan parameter).</li>
-    <li><code>super(nama, hp)</code> di class <code>Warrior</code> berfungsi memanggil *constructor* milik *parent class* (<code>Character</code>) untuk menginisialisasi atribut dasar.</li>
-    <li><code>super.nama</code> memanggil atribut dari *parent* secara eksplisit (walaupun bisa dipanggil langsung tanpa `super` jika tipenya `protected`).</li>
+    <li><code>this.name</code> dipakai di class <code>Character</code> untuk merujuk pada atribut *class* (bukan parameter).</li>
+    <li><code>super(name, currentLevel)</code> di class <code>Warrior</code> berfungsi mengirim data ke *constructor parent* (<code>Character</code>) agar atribut dasarnya terinisialisasi.</li>
   </ul>
 </div>
 
 <!-- Kolom Kode -->
-<div class="text-xs leading-tight">
+<div class="text-[0.65rem] leading-tight">
 
 ```java
-class Character {
-    protected String nama;
-    protected int hp;
+public class Character {
+    protected String name;
+    protected int currentLevel;
 
-    public Character(String nama, int hp) {
+    public Character(String name, int currentLevel) {
         // 'this' membedakan atribut milik class dengan parameter
-        this.nama = nama; 
-        this.hp = hp;
+        this.name = name; 
+        this.currentLevel = currentLevel;
     }
 }
 
-class Warrior extends Character {
-    private String tipePedang;
-
-    public Warrior(String nama, int hp, String tipePedang) {
+public class Warrior extends Character {
+    private double healthPoint;
+    public Warrior(String name, int currentLevel) {
         // 'super' memanggil dan mengirim data ke constructor parent
-        super(nama, hp); 
-        this.tipePedang = tipePedang;
+        super(name, currentLevel); 
     }
     
-    public void info() {
-        System.out.println("Nama: " + super.nama);
-        System.out.println("Senjata: " + this.tipePedang);
+    // Constructor Warrior yang memiliki parameter lebih lengkap
+    public Warrior(String name, int currentLevel, double healthPoint/) {
+        super(name, currentLevel);
+        this.healthPoint = healthPoint;
     }
 }
 ```

@@ -8,21 +8,19 @@ layout: default
 
 <!-- Kolom Kiri -->
 <div class="text-[0.75rem] leading-tight space-y-4">
-  <p class="text-sm">Dengan menggunakan keyword <code>extends</code>, class turunan secara otomatis mewarisi atribut dan <code>bergerak()</code> dari class Character, lalu menambahkan serangan spesifik mereka sendiri.</p>
+  <p class="text-sm">Dengan keyword <code>extends</code>, class turunan secara otomatis memiliki atribut (seperti <code>name</code>, <code>healthPoint</code>) dan method <code>attack()</code> dari class Character.</p>
 
 ```java
 public class Warrior extends Character {
-    public void tebasPedang() {
-        System.out.println(nama + " menebas dengan pedang!");
-    }
+    // Atribut tambahan khusus Warrior (jika ada)
+    public double rage; 
 }
 ```
 
 ```java
 public class Mage extends Character {
-    public void lemparBolaApi() {
-        System.out.println(nama + " melempar bola api!");
-    }
+    // Atribut tambahan khusus Mage
+    public double manaPoint;
 }
 ```
 </div>
@@ -32,10 +30,14 @@ public class Mage extends Character {
 
 ```java
 public class Archer extends Character {
-    public void tembakPanah() {
-        System.out.println(nama + " menembakkan panah!");
-    }
+    // Atribut tambahan khusus Archer
+    public double arrowCount;
 }
+
+// Saat dieksekusi di Main:
+// Warrior w = new Warrior();
+// w.attack(mageTarget, 1.0); 
+// -> otomatis memanggil method attack() dari parent!
 ```
 </div>
 

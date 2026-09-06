@@ -4,4 +4,4 @@ class: text-center
 ---
 
 # Latihan Minggu 3
-note : edit ini
+Modul Checkout Pembayaran

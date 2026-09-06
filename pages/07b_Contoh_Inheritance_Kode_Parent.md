@@ -4,21 +4,29 @@ layout: default
 
 # Implementasi: Parent Class (Character)
 
-<div class="text-left text-base leading-normal space-y-4 mt-4">
+<div class="text-left text-[0.8rem] leading-normal space-y-4 mt-4">
 
 <p>
-Pertama, kita definisikan class <code>Character</code> yang bertindak sebagai fondasi utama. Class ini mendefinisikan atribut dan <i>method</i> dasar yang secara umum pasti dimiliki oleh setiap karakter di dalam game.
+Pertama, kita definisikan class <code>Character</code> sebagai fondasi. Class ini berisi atribut dan method dasar yang merepresentasikan logika umum sebuah karakter.
 </p>
 
 ```java
-// Parent Class
 public class Character {
-    public String nama;
-    public int hp; // Health Point
+    public String name;
+    public double healthPoint;
+    public double physicalAttack;
+    public double defense;
 
-    // Method umum yang bisa diwariskan
-    public void bergerak() {
-        System.out.println(nama + " bergerak maju.");
+    // Method umum yang akan diwariskan ke seluruh child class
+    public void attack(Character target, double distance) {
+        if (distance > 1.5) {
+            System.out.printf("%s terlalu jauh untuk diserang!\n", target.name);
+            return;
+        }
+
+        double damage = Math.max(physicalAttack - target.defense, 0);
+        target.healthPoint -= damage;
+        System.out.printf("%s menerima kerusakan dasar sebesar %.0f\n", target.name, damage);
     }
 }
 ```
