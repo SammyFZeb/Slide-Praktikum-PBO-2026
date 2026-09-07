@@ -4,7 +4,7 @@ highlighter: shiki
 lineNumbers: false
 info: |
   ## Praktikum PBO Pertemuan 3
-  Asisten Praktikum Pemrograman Berbasis Objek 2026.
+  Asisten Praktikum Pemrograman Berorientasi Objek 2026.
   Teknik Informatika Universitas Padjadjaran.
 drawings:
   persist: false
@@ -17,7 +17,7 @@ exportFilename: 'materi-pbo-03'
 colorScheme: 'dark'
 ---
 
-# Praktikum<br>Pemrograman<br>Berbasis Objek
+# Praktikum<br>Pemrograman<br>Berorientasi Objek
 
 **Pertemuan 3**
 
