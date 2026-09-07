@@ -110,6 +110,10 @@ src: ./pages/16b_Judul_Assignments.md
 ---
 
 ---
+src: ./pages/16c_InstruksiAssignment.md
+---
+
+---
 src: ./pages/18_Teknis_Pengumpulan.md
 ---
 
