@@ -12,10 +12,10 @@ Pertama, kita definisikan class <code>Character</code> sebagai fondasi. Class in
 
 ```java
 public class Character {
-    public String name;
-    public double healthPoint;
-    public double physicalAttack;
-    public double defense;
+    protected String name;
+    protected double healthPoint;
+    protected double physicalAttack;
+    protected double defense;
 
     // Method umum yang akan diwariskan ke seluruh child class
     public void attack(Character target, double distance) {

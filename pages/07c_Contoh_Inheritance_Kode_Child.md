@@ -13,16 +13,17 @@ layout: default
 ```java
 public class Warrior extends Character {
     // Atribut tambahan khusus Warrior (jika ada)
-    public double rage; 
+    private double rage;
 }
 ```
 
 ```java
 public class Mage extends Character {
     // Atribut tambahan khusus Mage
-    public double manaPoint;
+    private double manaPoint;
 }
 ```
+
 </div>
 
 <!-- Kolom Kanan -->
@@ -31,14 +32,15 @@ public class Mage extends Character {
 ```java
 public class Archer extends Character {
     // Atribut tambahan khusus Archer
-    public double arrowCount;
+    private double arrowCount;
 }
 
 // Saat dieksekusi di Main:
 // Warrior w = new Warrior();
-// w.attack(mageTarget, 1.0); 
+// w.attack(mageTarget, 1.0);
 // -> otomatis memanggil method attack() dari parent!
 ```
+
 </div>
 
 </div>
