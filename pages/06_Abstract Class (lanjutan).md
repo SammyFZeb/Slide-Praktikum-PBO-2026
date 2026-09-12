@@ -23,7 +23,8 @@ public abstract class Kendaraan {
 <div v-click="2" class="">
 
 ```java
-// Mobil wajib mengimplementasikan method 'maju()' dari Kendaraan
+// Mobil wajib mengimplementasikan
+// method 'maju()' dari Kendaraan
 public class Mobil extends Kendaraan {
 
     @Override
@@ -33,6 +34,7 @@ public class Mobil extends Kendaraan {
 }
 ```
 
+</div>
 </div>
 
 <div v-click="3" class="">
@@ -51,5 +53,4 @@ public class Main {
 }
 ```
 
-</div>
 </div>

@@ -14,7 +14,7 @@ Subclass yang mewarisi abstract class wajib mengimplementasikan (override) semua
 </div>
 
 <div>
-<div v-click="1" class="">
+<div class="">
 
 ```java
 public abstract class Kendaraan {

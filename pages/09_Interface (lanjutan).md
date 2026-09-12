@@ -1,7 +1,8 @@
 # Interface (lanjutan)
 
+<div class="grid grid-cols-2 gap-4">
 
-<br>
+<div class="">
 
 Suatu class dapat mengimplementasi lebih dari 1 Interface.
 
@@ -25,6 +26,10 @@ public class MobilListrik implements Kendaraan, Baterai {
 }
 ```
 
+</div>
+
+<div class="">
+
 Interface dapat dapat meng-extend lebih dari 1 Interface lainnya.
 
 
@@ -33,3 +38,7 @@ public interface KendaraanOtonom extends Kendaraan, Navigasi {
     public void kemudiOtomatis();
 }
 ```
+
+</div>
+
+</div>

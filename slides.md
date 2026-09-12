@@ -69,19 +69,19 @@ src: ./pages/11_Polimorfisme.md
 
 ---
 ---
-src: ./pages/12_Cover Interface.md 
+src: ./pages/12_Jenis 1 Polimorfisme.md 
 
 ---
 ---
-src: ./pages/13_Interface.md 
+src: ./pages/13_Jenis 2 Polimorfisme.md 
 
 ---
 ---
-src: ./pages/14_Interface (lanjutan).md 
+src: ./pages/14_Perbandingan.md 
 
 ---
 ---
-src: ./pages/15_Cover UML.md 
+src: ./pages/15_Polimorfisme (lanjutan).md 
 
 ---
 ---

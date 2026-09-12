@@ -28,7 +28,8 @@ public interface Kendaraan {
 <div v-click="2" class="">
 
 ```java
-// Mobil wajib mengimplementasikan semua method dari interface Kendaraan
+// Mobil wajib mengimplementasikan semua method
+// dari interface Kendaraan
 public class Mobil implements Kendaraan {
     private String merek;
 
