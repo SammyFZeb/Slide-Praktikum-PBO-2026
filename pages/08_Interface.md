@@ -15,7 +15,7 @@ Perhatikan penulisan interface serta pengimplementasiannya pada gambar disamping
 </div>
 
 <div>
-<div v-click="1" class="">
+<div class="">
 
 ```java
 public interface Kendaraan {
@@ -25,7 +25,7 @@ public interface Kendaraan {
 ```
 
 </div>
-<div v-click="2" class="">
+<div class="">
 
 ```java
 // Mobil wajib mengimplementasikan semua method
