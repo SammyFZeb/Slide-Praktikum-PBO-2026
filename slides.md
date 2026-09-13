@@ -85,10 +85,6 @@ src: ./pages/15_Polimorfisme (lanjutan).md
 
 ---
 ---
-src: ./pages/16_UML.md 
-
----
----
 src: ./pages/17_Cover Instance Of.md 
 
 ---
@@ -125,23 +121,7 @@ src: ./pages/25_Assignment1.md
 
 ---
 ---
-src: ./pages/26_Assignment2.md 
-
----
----
-src: ./pages/27_Snippets.md 
-
----
----
 src: ./pages/28_Teknis Pengumpulan 1.md 
-
----
----
-src: ./pages/29_Teknis Pengumpulan 2.md 
-
----
----
-src: ./pages/30_Deadline.md 
 
 ---
 ---

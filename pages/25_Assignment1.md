@@ -1,38 +1,23 @@
-# Assignment 5 Soal 1
+---
+layout: default
+---
 
-<div class="text-sm">
-implementasikan UML berikut dengan class Test dan perbaiki class Test tersebut:
-</div>
-<div class="flex">
+# Instruksi Assignment
 
-<div class="">
+<div class="grid grid-cols-[55%_40%] gap-8 items-center mt-4">
 
-```java
-class Test {
-
-  public static void main(String[] args) {
-    CaesarCipher Cipher1 = new CaesarCipher();
-    System.out.println(Cipher1.encrypt("PemrogramanBerorientasiObjek", 5));
-    System.out.println(Cipher1.decrypt("WIVKBHWBSBOKBHLTWHA", 7));
-
-    Cipher Cipher2 = new CaesarCipher(3,2);
-    // Change line of code below to fix the problem without change declaration code!
-    Cipher2.encrypt("KAGIQDQQJBQOFUZSMFQJFNGFUFIMEYQPUA", 12);
-  }
-}
-```
-
-Dengan ketentuan :
-- `Cipher` adalah class interface
-- `CaesarCipher` adalah class implement `Cipher`
+<!-- Kolom Teks -->
+<div class="text-left text-base leading-normal space-y-4">
+    <p>
+        Dalam sebuah sistem Smart Home, terdapat Central Hub yang mengatur berbagai macam peralatan elektronik. Setiap perangkat memiliki konsumsi daya listrik dasar dan fungsionalitas unik. Sebagian perangkat dapat dihubungkan ke jaringan Wi-Fi, sebagian dapat diatur intensitasnya, dan beberapa perangkat hanya memiliki sakelar hidup/mati biasa.
+    </p>
+  <p>
+  Silahkan clone repositori terkait, tidak perlu menulis kode dari nol. Implementasikan konsep-konsep yang sudah dipelajari untuk melengkapi kode-kode yang belum lengkap. Kerjakan hanya bagian kode yang bertuliskan TODO.
+  </p>
 </div>
 
-<div>
-
-<img src="/asset/uml1.png" class="w-2/3 m-auto" />
-
-</div>
+<div class="flex justify-center items-center">
+  <img src="/asset/contoh-tugas.png" alt="Contoh Tugas" class="shadow-md max-h-72 object-contain" />
 </div>
 
-
-
+</div>

@@ -3,26 +3,32 @@ layout: center
 class: text-center
 ---
 
-# Teknis Pengumpulan
+# Deadline Pengumpulan
 
-Pengerjaan dan pengumpulan tugas akan dilakukan di **Github Classroom**
-
-<div grid="~ cols-2 gap-2" style="margin-top: 48px">
+<div grid="~ cols-3 gap-32" style="margin-top: 48px">
   <div>
 
 #### Kelas A:
 
-[Link Tugas Kelas A](https://classroom.github.com/a/-zD5nTAs)
+21 September 2026
 
   </div>
   <div>
 
 #### Kelas B:
 
-[Link Tugas Kelas B](https://classroom.github.com/a/ua6Vqx9l)
+20 September 2026
+
+  </div>
+  <div>
+
+#### Kelas C:
+
+22 September 2026
 
   </div>
 </div>
 
 <br>
-Accept assignment terlebih dahulu lalu link akun Github dengan slot nama yang sesuai di Github Classroom
+
+**Waktu yang dilihat adalah waktu last commit.** Jika ada yang commit melewati deadline walaupun sudah commit sebelumnya akan dianggap terlambat.
