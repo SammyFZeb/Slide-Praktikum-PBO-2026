@@ -43,7 +43,7 @@ public class Mobil extends Kendaraan {
 public class Main {
     public static void main(String[] args) {
         Kendaraan myKendaraan = new Kendaraan();
-        // Error, tidak bisa meng-instansiasi kelas abstrak secara langsung:
+        // Error, tidak bisa meng-instansiasi kelas abstrak secara langsung
 
         Mobil myMobil = new Mobil();
         
