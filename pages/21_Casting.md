@@ -28,7 +28,7 @@ Apa output dari fruit instanceof Fruit?
 **Downcasting:**
 
 ```java
-Fruit fruit = new Fruit();
+Fruit fruit = new Apple();
 Apple castedApple = (Apple) fruit;
 ```
 
