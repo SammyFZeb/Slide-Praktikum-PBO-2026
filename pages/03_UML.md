@@ -14,6 +14,7 @@ layout: default
 UML adalah salah satu "bahasa" standar yang digunakan untuk memodelkan visualisasi, perancangan, dan pendokumentasian aplikasi.
 
 "Bahasa" di sini bukanlah bahasa pemrograman, melainkan berupa **simbol grafis, bangun datar, dan garis koneksi** yang standar.
+
 </div>
 
 <div>
@@ -21,6 +22,7 @@ UML adalah salah satu "bahasa" standar yang digunakan untuk memodelkan visualisa
 UML ibarat sebuah <i>blueprint</i> (cetak biru) untuk membangun gedung.
 
 Bangunan yang kompleks tentu membutuhkan <i>blueprint</i> yang berbeda-beda tergantung fungsinya (misal: denah per lantai, skematik jalur pipa, atau rute evakuasi). Inilah alasan mengapa UML memiliki **banyak tipe diagram** sesuai tujuannya.
+
 </div>
 
 </div>
@@ -30,7 +32,7 @@ Bangunan yang kompleks tentu membutuhkan <i>blueprint</i> yang berbeda-beda terg
 <h3 class="text-base font-bold text-orange-400 mb-3">Tipe-tipe Diagram UML:</h3>
 
 <ul class="list-disc list-inside space-y-1">
-  <li><b>Class diagram</b> (paling sering) ⭐</li>
+  <li><b>Class diagram</b> (dibahas di sini)</li>
   <li>Use case diagram</li>
   <li>Composite structure diagram</li>
   <li>State machine diagram</li>

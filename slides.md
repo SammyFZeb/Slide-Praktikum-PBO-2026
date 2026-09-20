@@ -54,27 +54,19 @@ src: ./pages/07_Hubungan Antar Kelas 1.md
 
 ---
 ---
-src: ./pages/10_UML Interface Abstract.md 
+src: ./pages/07a_Aggregation.md 
 
 ---
 ---
-src: ./pages/11_OOAD.md 
+src: ./pages/07b_Composition.md 
 
 ---
 ---
-src: ./pages/12_OOA.md 
+src: ./pages/07c_Inheritance.md 
 
 ---
 ---
-src: ./pages/13_OOD.md 
-
----
----
-src: ./pages/14_Keuntungan OOAD.md 
-
----
----
-src: ./pages/15_Kekurangan OOAD.md 
+src: ./pages/07d_Realization.md 
 
 ---
 ---
@@ -110,23 +102,11 @@ src: ./pages/23_Recalling Polimorfisme.md
 
 ---
 ---
-src: ./pages/24_Cover Exercise.md 
-
----
----
-src: ./pages/25_Exercise.md 
-
----
----
 src: ./pages/26_Cover Assignment.md 
 
 ---
 ---
 src: ./pages/27_Assignment.md 
-
----
----
-src: ./pages/28_Teknis Pengumpulan.md 
 
 ---
 ---
