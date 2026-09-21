@@ -5,4 +5,4 @@ class: text-center
 
 # Terima Kasih!
 
-Tertekan ya?
+Tertekan ya? Namanya juga hidup
