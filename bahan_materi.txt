@@ -1,0 +1,81 @@
+[Slide 1]
+Error adalah kondisi ketika program tidak berjalan semestinya. Error mungkin dipicu ulang kesalahan sintaks, logika, masukkan yang tidak valid, atau kondisi eksternal.
+
+Error tidak sama dengan exception.
+
+Exception adalah mekanisme program di level runtime yang tujuannya untuk menjalankan "kode program lain" daripada "alur normal" yang sudah didefinsikan. 
+
+"Kode program lain" di sini artinya kode yang memang dikhususkan untuk dijalankan ketika ada exception. 
+
+"Alur normal" di sini artinya alur bisnis yang seharusnya terjadi sesuai harapan, tetapi karena terdapat exception, terjadi "pengecualian" untuk menjalankan kode program lain.
+
+[Slide 2]
+Lalu apa "kode program lain" ini?
+
+"Kode program lain" adalah sesuatu yang kita definisikan secara sengaja untuk dijalankan ketika terjadi exception. Jika terdapat exception, tetapi tidak ada kode program yang bertugas menangani exception ini, maka akan terjadi crash dan membuat program berhenti. Ide pendefinisian kode program yang dijalankan ketika ada exception selanjutnya disebut sebagai exception handling.
+
+[Slide 3]
+Exception handling adalah mekanisme di mana sebuah alur khusus didefinisikan ketika sebuah kejadian yang berpotensi menganggu alur kode program utama terjadi dan berpotensi menimbulkan crash. Exception handling berusaha untuk membuat jalur alternatif dengan menangani masalah lebih elegan daripada membiarkan program crash.
+
+(perlu ilustrasi)
+
+[Slide 4]
+(Hierarki exception di Java)
+
+[Slide 5]
+Java memiliki class Throwable, yang artinya seluruh object dari class Throwable atau turunan dapat “dilempar” atau menggunakan keyword “throw” di depannya. Keyword “throw” digunakan untuk melempar sinyal bahwa ada exception / kesalahan ketika runtime.
+
+Java memiliki dua jenis exception yang lumrah dibahas, yaitu Checked Exception dan Unchecked Exception.
+
+[Slide 6]
+Baik checked exception atau unchecked excpetion, keduanya terjadi di level runtime.
+
+Perbedaannya adalah bagaimana Java memperlukan kedua exception ini bagaimana pola kemuncuulan exception ini.
+
+Checked Exception biasanya menyebabkan error compile. Biasanya terdapat bagian dari kode program kita yang berpotensi muncul exception tetapi tidak segera diberikan "perlakuan khusus". Java sangat sensitif dan mengembalikan error compile untuk memberitahu penulis kode jika kode yang ditulis sangat mungkin muncul exception. Contohnya, gagal komunikasi ke database atau akses file yang corrupt.
+
+Unchecked Exception tidak akan menyebabkan error compile. Exception ini biasanya terjadi karena kesalahan logika atau implementasi kode. Contohnya pembagian dengan nol, kesalahan parsin pada tipe data, atau akses object yang null. Unchecked exception seringkali sulit untuk diidentifikasi sejak awal. Pemahaman pada program yang dikembangkan sangat diperlukan untuk meminimalisir exception ini terjadi.
+
+[Slide 7]
+Exception bisa muncul secara sengaja meski tanpa error. Tapi bagaimana? 
+Java memiliki kata kunci throw, exception adalah turunan dari class yang mengimplementasi interface Throwable. Exception bisa dibuat secara sengaja jika kita ingin mengimplementasikan alur-alur khusus pada program kita misalnya jika data kosong atau input tidak valid atau akses data tidak sah. Tapi baik exception yg muncul karena erorr atau sengaja, perlu penanganan khusus
+
+[Slide 8]
+Metode try-catch-finally adalah metode paling umum di mana hampir semua bahasa pemrograman yang lazim digunakan memilikinya (kecuali python dengan pola try-except)
+
+Metode ini memungkinkan kita untuk mengimplementasikan "perlakukan khusus" ketika exception terjadi. Dan pola penulisannya cukup intuitif.
+
+Blok try biasanya digunakan untuk menulis kode program yang hasilnya sesuai harapan kita (happy path; logika yang diimplementasi sesuai dan benar). Pada blok try, jika terdapat exception yang muncul, baris-baris kode selanjutnya biasanya tidak dieksekusi dan langsung pindah ke blok catch.
+
+Blok catch adalah blok di mana ketika terjadi exception, "perlakuan khusus" tersebut dilakukan, misalnya mengembalikan error ke terminal atau praktik paling lumrahnya adalah mengembalikan error object di pada pengembangan REST API.
+
+Blok finally adalah blok spesial yg juga opsional, finally biasanya dilakukan ketika ada logika yang ingin diimplementasi baik ketika terjadi atau tidak terjadi excpetion.
+
+[Slide 9]
+(contoh try-catch)
+
+Dalam bahasa manusia: "Tolong coba (try) jalankan serangkaian mekanisme di blok try, jika terdapat exception, lempar (throw) exceptionnya, lalu tangkap (catch) exception tersebut dan jalankan perlakuan khusus yang sudah didefinisikan. Jika sudah selesai (finally), panggil alur di blok finally sebagai penutup"
+
+Implementasi try-catch biasanya ditulis dalam sebuah method yang di mana terdapat logika untuk melempar (throw) exception. Akan tetapi, bagaimana jika method hanya ingin melempar exception tanpa ada penanganan langsung di method tersebut?
+
+[Slide 10]
+Kata kunci "throws". 
+
+"throws" (berbeda dengan throw, dan mungkin membingungkan) adalah mekanisme untuk menandai sebuah method akan melempar exception dan memberi tahu bahwa "tolong implementasikan try-catch pada program yang memanggil method ini, kalau pun tidak, definisikan ulang kata kunci throws di method terkait yang memanggil method ini"
+
+Mekanisme di mana exception yang tidak langsung ditangani dan dilempar secara beruntun hingga berakhir di tempat yang kita khususkan untuk menangani excpetion, disebut sebagai exception propagation.
+
+[Slide 11]
+(ilustrasi exception propagation)
+
+[Slide 12]
+Java memiliki banyak sekali exception bawaan, bahkan menjadi pilihan konyol untuk menghafal dan menulis semua exception di Java.
+
+Pada pengembangan tingkat lanjut, kita mungkin ingin membuat exception untuk kasus tertentu. Misalnya, pada pengembangan REST API, ketika data tidak ditemukan, masukkan tidak valid, atau akses tidak sah, kita ingin membuat exception khusus yang berisi HTTP Status code dan messagenya
+
+Implementasinya cukup mudah, dengan melakukan inheritance dari class RuntimeException
+
+[Slide 13]
+Data tidak ditemukan -> DataNotFoundException; 404; Data tidak ditemukan
+Masukkan tidak valid -> BadRequestException; 401; Data yang dimasukkan tidak valid
+Akses tidak saha -> ForbiddenException; 403; Akses terhadap data tidak diberikan
