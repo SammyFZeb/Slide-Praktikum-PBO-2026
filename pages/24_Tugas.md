@@ -5,41 +5,41 @@ Sistem Validasi Data Mahasiswa
   <div class="col-span-7 text-sm space-y-3">
     <div class="space-y-3">
       <div class="border-l-2 border-blue-500 pl-3">
-        <span class="font-bold">1. Custom Exception (minimal 2 class)</span>
+        <span class="font-bold">1. Implementasi Custom Exception (Minimal 2 Class)</span>
         <p class="text-xs text-gray-300 m-0 mt-0.5">
-          Extend <code>RuntimeException</code>. Setiap exception wajib memiliki <b>field statusCode</b> dan <b>pesan deskriptif</b>. Contoh: <code>InvalidNimException</code>, <code>InvalidIpkException</code>.
+          Terapkan konsep pewarisan terhadap <code>RuntimeException</code>. Setiap kelas diwajibkan memuat <b>atribut statusCode</b> dan <b>pesan penjelasan</b>. Contoh usulan implementasi: <code>InvalidNimException</code>, <code>InvalidIpkException</code>.
         </p>
       </div>
       <div class="border-l-2 border-emerald-500 pl-3">
-        <span class="font-bold">2. Class Mahasiswa dengan Validasi</span>
+        <span class="font-bold">2. Enkapsulasi & Validasi Atribut pada Class Mahasiswa</span>
         <p class="text-xs text-gray-300 m-0 mt-0.5">
-          Setter melakukan validasi input. Gunakan <code>throw</code> jika validasi gagal. Contoh: NIM harus 18 digit, IPK antara 0.0 – 4.0.
+          Metode mutator (setter) diharuskan memuat mekanisme validasi masukan. Terapkan deklarasi <code>throw</code> untuk melontarkan exception spesifik ketika validasi tidak terpenuhi. Ketentuan aturan: Panjang NIM identik dengan 18 karakter numerik, rentang toleransi IPK antara 0.0 hingga 4.0.
         </p>
       </div>
       <div class="border-l-2 border-purple-500 pl-3">
-        <span class="font-bold">3. Program CLI dengan try-catch</span>
+        <span class="font-bold">3. Implementasi Antarmuka CLI & Eksekusi Try-Catch</span>
         <p class="text-xs text-gray-300 m-0 mt-0.5">
-          CLI interaktif meminta input data mahasiswa. Tangkap setiap exception dan tampilkan <b>status code</b> serta <b>pesan errornya</b>.
+          Rancang program antarmuka baris perintah (CLI) interaktif untuk memfasilitasi instansiasi entitas mahasiswa. Gunakan blok <code>try-catch</code> guna menampung exception yang dideklarasikan, dan tampilkan indikasi kegagalan meliputi <b>kode status</b> dan <b>pesan kesalahan representatif</b>.
         </p>
       </div>
     </div>
   </div>
 
   <div class="col-span-5">
-    <span class="text-xs font-mono uppercase text-gray-400 block mb-2">Contoh Output:</span>
+    <span class="text-xs font-mono uppercase text-gray-400 block mb-2">Referensi Ekspektasi Output:</span>
 
-```
-=== INPUT DATA MAHASISWA ===
+```text
+=== MODUL INSTANSIASI DATA MAHASISWA ===
 Masukkan NIM: 12345
-Error [400]: NIM harus terdiri dari 18 digit!
+Kondisi Kegagalan [400]: Panjang NIM tidak sesuai prasyarat (18 karakter).
 
 Masukkan NIM: 140810240074
 Masukkan Nama: Haris Herdiansyah
 Masukkan IPK: 5.0
-Error [400]: IPK harus antara 0.0 hingga 4.0!
+Kondisi Kegagalan [400]: Besaran IPK melampaui rentang batas yang diizinkan (0.0 - 4.0).
 
 Masukkan IPK: 3.75
-✅ Data berhasil disimpan!
+[INFO]: Referensi entitas mahasiswa berhasil dialokasikan pada memori sementara.
 ```
 
   </div>
