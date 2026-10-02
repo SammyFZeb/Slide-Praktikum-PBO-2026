@@ -1,45 +1,52 @@
 # Error vs Exception
 
-<div class="grid grid-cols-2 gap-8 items-start mt-4">
+<div class="grid grid-cols-2 gap-8 items-start mt-6">
 
-<div class="space-y-4 text-sm leading-relaxed">
-
-<div class="border-l-2 border-red-500 pl-4">
-<h3 class="text-base font-bold text-red-400 mb-1">Error</h3>
-
+<div class="border-l-4 border-red-500 pl-5 space-y-3">
+<h3 class="text-xl font-bold text-red-400">Error</h3>
+<p class="text-sm leading-relaxed text-gray-300">
 Kondisi kritis di mana <strong>program tidak dapat berjalan semestinya</strong>. Error umumnya dipicu oleh:
-
-- Kesalahan <strong>sintaks</strong>
-- Kesalahan <strong>logika fundamental</strong>
-- <strong>Masukan yang tidak valid</strong>
-- <strong>Faktor eksternal sistem</strong> (misalnya: kegagalan jaringan, memori penuh)
+</p>
+<ul class="text-sm space-y-2 list-disc list-inside text-gray-300">
+  <li>Kesalahan <strong>sintaks</strong></li>
+  <li>Kesalahan <strong>logika fundamental</strong></li>
+  <li><strong>Masukan yang tidak valid</strong></li>
+  <li><strong>Faktor eksternal sistem</strong> (jaringan, memori penuh)</li>
+</ul>
 </div>
 
-<div class="border-l-2 border-blue-500 pl-4">
-<h3 class="text-base font-bold text-blue-400 mb-1">Exception</h3>
-
+<div class="border-l-4 border-blue-500 pl-5 space-y-3">
+<h3 class="text-xl font-bold text-blue-400">Exception</h3>
+<p class="text-sm leading-relaxed text-gray-300">
 <strong>Mekanisme pada tingkat runtime</strong> yang dirancang untuk mengalihkan alur eksekusi dari <strong>alur normal</strong> menuju <strong>alur penanganan khusus</strong> ketika terjadi anomali.
-
+</p>
 </div>
 
 </div>
 
-<div class="text-sm leading-relaxed space-y-4">
+---
 
-<div class="bg-gray-800 bg-opacity-60 rounded-lg p-4 border border-gray-600">
-<p class="text-yellow-300 font-semibold mb-2">Catatan Penting: Error ≠ Exception</p>
-<p>Keduanya merupakan konsep yang berbeda secara arsitektur dan penanganannya.</p>
+# Alur Eksekusi dalam Konteks Exception
+
+<div class="space-y-6 mt-8">
+
+<div class="bg-gray-800 bg-opacity-60 rounded-lg p-5 border border-gray-600">
+<p class="text-yellow-300 font-semibold mb-2 text-base">Catatan Penting: Error ≠ Exception</p>
+<p class="text-sm text-gray-300 leading-relaxed">Keduanya merupakan konsep yang berbeda secara arsitektur dan penanganannya.</p>
 </div>
 
-<div class="bg-gray-800 bg-opacity-60 rounded-lg p-4 border border-gray-600">
-<p class="font-semibold text-emerald-400 mb-1">Alur Penanganan Khusus</p>
-<p>Blok kode yang secara spesifik didefinisikan untuk merespons dan menangani suatu <strong>exception</strong> agar program terhindar dari penghentian paksa (crash).</p>
+<div class="grid grid-cols-2 gap-6">
+
+<div class="bg-gray-800 bg-opacity-60 rounded-lg p-5 border border-emerald-800">
+<p class="font-semibold text-emerald-400 mb-2 text-base">Alur Normal</p>
+<p class="text-sm text-gray-300 leading-relaxed">Alur eksekusi program utama yang berjalan sesuai dengan spesifikasi bisnis yang diharapkan dalam kondisi ideal.</p>
 </div>
 
-<div class="bg-gray-800 bg-opacity-60 rounded-lg p-4 border border-gray-600">
-<p class="font-semibold text-emerald-400 mb-1">Alur Normal</p>
-<p>Alur eksekusi program utama yang berjalan sesuai dengan spesifikasi bisnis yang diharapkan dalam kondisi ideal.</p>
+<div class="bg-gray-800 bg-opacity-60 rounded-lg p-5 border border-blue-800">
+<p class="font-semibold text-blue-400 mb-2 text-base">Alur Penanganan Khusus</p>
+<p class="text-sm text-gray-300 leading-relaxed">Blok kode yang spesifik didefinisikan untuk merespons dan menangani suatu <strong>exception</strong> agar program terhindar dari penghentian paksa (crash).</p>
 </div>
 
 </div>
+
 </div>
