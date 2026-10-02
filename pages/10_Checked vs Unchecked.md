@@ -5,9 +5,7 @@
 <div class="bg-gray-800 bg-opacity-60 rounded-xl p-5 border border-cyan-800 text-sm leading-relaxed space-y-3">
 <h3 class="text-base font-bold text-cyan-400 mb-2">✅ Checked Exception</h3>
 
-<p>Biasanya <strong>menyebabkan error compile</strong>. Java sangat sensitif dan memperingatkan penulis kode bahwa kode tersebut sangat mungkin memunculkan exception.</p>
-
-<p>Muncul ketika terdapat bagian kode yang berpotensi exception tetapi <strong>tidak segera diberikan perlakuan khusus</strong>.</p>
+<p>Biasanya <strong>menyebabkan error compile</strong>. Java sangat sensitif dan memperingatkan bahwa kode tersebut sangat mungkin memunculkan exception jika tidak ada perlakuan khusus.</p>
 
 <div class="border-t border-gray-600 pt-2 mt-2">
 <p class="font-semibold text-cyan-300 text-xs uppercase tracking-wide mb-1">Contoh:</p>
@@ -19,19 +17,17 @@
 </div>
 </div>
 
-<div v-click class="bg-gray-800 bg-opacity-60 rounded-xl p-5 border border-orange-800 text-sm leading-relaxed space-y-3">
+<div class="bg-gray-800 bg-opacity-60 rounded-xl p-5 border border-orange-800 text-sm leading-relaxed space-y-3">
 <h3 class="text-base font-bold text-orange-400 mb-2">⚡ Unchecked Exception</h3>
 
-<p><strong>Tidak menyebabkan error compile</strong>. Exception ini biasanya terjadi karena <strong>kesalahan logika atau implementasi kode</strong>.</p>
-
-<p>Seringkali <strong>sulit diidentifikasi sejak awal</strong>. Pemahaman mendalam terhadap program sangat diperlukan untuk meminimalisirnya.</p>
+<p><strong>Tidak menyebabkan error compile</strong>. Biasanya terjadi karena <strong>kesalahan logika atau implementasi</strong>. Seringkali sulit diidentifikasi sejak awal.</p>
 
 <div class="border-t border-gray-600 pt-2 mt-2">
 <p class="font-semibold text-orange-300 text-xs uppercase tracking-wide mb-1">Contoh:</p>
 <ul class="space-y-1">
   <li>➗ Pembagian dengan nol <code>ArithmeticException</code></li>
-  <li>🔢 Kesalahan parsing tipe data <code>NumberFormatException</code></li>
-  <li>🚫 Akses object yang null <code>NullPointerException</code></li>
+  <li>🔢 Kesalahan parsing <code>NumberFormatException</code></li>
+  <li>🚫 Akses object null <code>NullPointerException</code></li>
 </ul>
 </div>
 </div>

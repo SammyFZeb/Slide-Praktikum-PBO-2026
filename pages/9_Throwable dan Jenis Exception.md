@@ -14,29 +14,27 @@ Keyword <code>throw</code> digunakan untuk melempar sinyal bahwa ada <strong>exc
 </p>
 </div>
 
-<div v-click class="border-l-2 border-blue-500 pl-4">
+<div class="border-l-2 border-blue-500 pl-4">
 <h3 class="text-base font-bold text-blue-400 mb-1">Dua Jenis Exception</h3>
 <p>Java memiliki dua jenis exception yang lumrah dibahas:</p>
 <ul class="mt-1 space-y-1">
   <li><span class="text-cyan-400 font-semibold">Checked Exception</span></li>
   <li><span class="text-orange-400 font-semibold">Unchecked Exception</span></li>
 </ul>
+<p class="mt-2">Keduanya terjadi di <strong>level runtime</strong>. Perbedaannya adalah bagaimana Java memperlakukan keduanya.</p>
 </div>
 
 </div>
 
-<div v-click class="bg-gray-800 bg-opacity-60 rounded-xl p-5 border border-gray-600 text-sm leading-relaxed space-y-3">
+<div class="bg-gray-800 bg-opacity-60 rounded-xl p-5 border border-gray-600 text-sm leading-relaxed">
 
-<p class="text-center font-bold text-yellow-300 mb-1">⚡ Perlu Diingat</p>
-
-<p>Baik <em>checked</em> maupun <em>unchecked</em> exception, keduanya terjadi di <strong>level runtime</strong>.</p>
-
-<p>Perbedaannya adalah <strong>bagaimana Java memperlakukan</strong> kedua jenis exception ini dan <strong>pola kemunculannya</strong>.</p>
+<p class="text-center font-bold text-yellow-300 mb-3">Contoh: melempar exception secara eksplisit</p>
 
 ```java
-// Contoh: melempar exception secara eksplisit
 throw new RuntimeException("Ada yang salah!");
 ```
+
+<p class="mt-4 text-gray-300">Baik exception yang muncul karena <em>error</em> maupun yang <em>sengaja dilempar</em>, keduanya tetap perlu <strong>penanganan khusus</strong>.</p>
 
 </div>
 
