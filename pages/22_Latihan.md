@@ -4,28 +4,28 @@
 
 <div class="space-y-5 text-sm leading-relaxed">
 
-<p class="text-base text-gray-200">Buka *boilerplate* kode yang telah disediakan dan selesaikan instruksi berikut:</p>
+<p class="text-base text-gray-200">Selesaikan instruksi berikut menggunakan <i>boilerplate</i> yang disediakan:</p>
 
-<div class="space-y-5 mt-4">
+<div class="space-y-3 mt-4">
 
-<div class="border-l-4 border-blue-500 pl-4">
-<span class="font-bold text-blue-400 text-base">1. Pemahaman Struktur Kode</span>
-<p class="text-gray-300 mt-1">Pelajari mekanisme program secara hierarkis. <i>(Petunjuk: Urutan membaca yang disarankan adalah dari Entity, Repository, Service, kemudian class Main)</i>.</p>
+<div class="border-l-4 border-blue-500 pl-3">
+<span class="font-bold text-blue-400 text-sm">1. Pemahaman Struktur Kode</span>
+<p class="text-gray-300 mt-0.5 text-xs">Pelajari alur program. <i>(Saran urutan baca: Entity ➔ Repository ➔ Service ➔ Main)</i>.</p>
 </div>
 
-<div class="border-l-4 border-emerald-500 pl-4">
-<span class="font-bold text-emerald-400 text-base">2. Fokus Implementasi</span>
-<p class="text-gray-300 mt-1">Implementasi penanganan dan pelemparan exception hanya perlu dilakukan pada kelas <code>ReservationService</code> dan <code>Main</code>.</p>
+<div class="border-l-4 border-emerald-500 pl-3">
+<span class="font-bold text-emerald-400 text-sm">2. Fokus Implementasi</span>
+<p class="text-gray-300 mt-0.5 text-xs">Fokuskan penanganan exception hanya pada <code>ReservationService</code> dan <code>Main</code>.</p>
 </div>
 
-<div class="border-l-4 border-yellow-500 pl-4">
-<span class="font-bold text-yellow-400 text-base">3. Analisis Custom Exception</span>
-<p class="text-gray-300 mt-1">Berdasarkan perilaku metode <code>createReservation()</code>, lakukan analisis untuk menentukan dan membuat <i>custom exception</i> yang dibutuhkan oleh sistem.</p>
+<div class="border-l-4 border-yellow-500 pl-3">
+<span class="font-bold text-yellow-400 text-sm">3. Analisis Custom Exception</span>
+<p class="text-gray-300 mt-0.5 text-xs">Analisis perilaku <code>createReservation()</code> untuk menentukan <i>custom exception</i> yang relevan.</p>
 </div>
 
-<div class="border-l-4 border-red-500 pl-4">
-<span class="font-bold text-red-400 text-base">4. Alokasi Waktu</span>
-<p class="text-gray-300 mt-1">Waktu pengerjaan dialokasikan selama <strong>20 menit</strong>.</p>
+<div class="border-l-4 border-red-500 pl-3">
+<span class="font-bold text-red-400 text-sm">4. Alokasi Waktu</span>
+<p class="text-gray-300 mt-0.5 text-xs">Waktu pengerjaan dialokasikan selama <strong>20 menit</strong>.</p>
 </div>
 
 </div>
