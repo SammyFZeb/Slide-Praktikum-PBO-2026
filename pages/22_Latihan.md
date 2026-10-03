@@ -8,10 +8,10 @@
 
 <div class="mt-4 text-gray-300 pr-4">
   <ol class="list-decimal list-outside ml-4 space-y-4">
-    <li><strong>Pemahaman Struktur Kode:</strong> Pelajari alur program secara hierarkis <i>(Saran urutan baca: Entity ➔ Repository ➔ Service ➔ Main)</i>.</li>
-    <li><strong>Fokus Implementasi:</strong> Terapkan penanganan exception secara spesifik hanya pada <code>ReservationService</code> dan <code>Main</code>.</li>
-    <li><strong>Analisis Custom Exception:</strong> Analisis fungsi <code>createReservation()</code> untuk mendesain dan melontarkan <i>custom exception</i> yang relevan.</li>
-    <li><strong>Alokasi Waktu:</strong> Sesi latihan ini dibatasi pengerjaannya selama <strong>20 menit</strong>.</li>
+    <li>Pelajari struktur kode dan mekanisme program (HINT: Urutan membaca bisa dimulai dari entity, repository, service, lalu class Main)</li>
+    <li>Fokuskan implementasi hanya pada ReservationService dan Main</li>
+    <li>Berdasarkan createReservation(), lakukan analisis dan implementasi custom exception yang dibutuhkan</li>
+    <li>Kerjakan selama 20 menit</li>
   </ol>
 </div>
 
