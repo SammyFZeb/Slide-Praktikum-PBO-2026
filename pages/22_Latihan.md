@@ -10,7 +10,7 @@
   <ol class="list-decimal list-outside ml-4 space-y-4">
     <li>Pelajari struktur kode dan mekanisme program (HINT: Urutan membaca bisa dimulai dari entity, repository, service, lalu class Main)</li>
     <li>Fokuskan implementasi hanya pada ReservationService dan Main</li>
-    <li>Berdasarkan createReservation(), lakukan analisis dan implementasi custom exception yang dibutuhkan</li>
+    <li>Berdasarkan createReservation(), lakukan analisis dan implementasi custom exception yang dibutuhkan, simpan di package exception</li>
     <li>Kerjakan selama 20 menit</li>
   </ol>
 </div>
