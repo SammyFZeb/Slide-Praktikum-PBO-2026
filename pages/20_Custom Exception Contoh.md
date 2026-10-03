@@ -1,12 +1,12 @@
-# Penggunaan Custom Exception (REST API)
+# Custom Exception Pada Kasus REST API
 
 <div class="space-y-6 mt-8 text-sm">
 
-| Skenario Kegagalan | Class Exception | Kode HTTP | Deskripsi Respons |
-|---|---|---|---|
-| Sumber daya tidak ditemukan | `DataNotFoundException` | `404` | Data referensi tidak tersedia |
-| Parameter masukan keliru | `BadRequestException` | `400` | Format masukan melanggar skema |
-| Otoritas akses ditolak | `ForbiddenException` | `403` | Akses ditolak oleh sistem otorisasi |
+| Skenario Kegagalan          | Class Exception         | Kode HTTP | Deskripsi Respons                   |
+| --------------------------- | ----------------------- | --------- | ----------------------------------- |
+| Sumber daya tidak ditemukan | `DataNotFoundException` | `404`     | Data referensi tidak tersedia       |
+| Parameter masukan keliru    | `BadRequestException`   | `400`     | Format masukan melanggar skema      |
+| Otoritas akses ditolak      | `ForbiddenException`    | `403`     | Akses ditolak oleh sistem otorisasi |
 
 <div class="bg-gray-800 bg-opacity-60 rounded-lg p-6 border border-gray-600 leading-relaxed mt-8">
 <p class="font-semibold text-yellow-300 mb-3 text-base">Praktik Terbaik Arsitektural</p>

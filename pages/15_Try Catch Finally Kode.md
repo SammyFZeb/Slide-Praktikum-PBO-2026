@@ -6,18 +6,18 @@
 try {
     System.out.print("Masukkan nilai pembagi: ");
     int angka = Integer.parseInt(sc.nextLine());
-    
+
     // Alur normal
     System.out.println("Hasil komputasi: " + (100 / angka));
-    
+
 } catch (NumberFormatException e) {
     // Penanganan exception parsing data
     System.out.println("Kesalahan: Input harus berupa bilangan bulat.");
-    
+
 } catch (ArithmeticException e) {
     // Penanganan exception matematika
     System.out.println("Kesalahan: Pembagian dengan nol tidak valid.");
-    
+
 } finally {
     // Dieksekusi pada akhir kondisi apapun
     System.out.println("Siklus operasi selesai dieksekusi.");
@@ -35,7 +35,7 @@ try {
 
 <div class="bg-gray-800 bg-opacity-60 rounded-lg p-6 border border-gray-600">
 <p class="font-semibold text-yellow-300 mb-3 text-base">Penjelasan Semantik:</p>
-<p class="text-gray-300 text-base">Blok <strong>try</strong> mengisolasi area eksekusi normal. Ketika terjadi anomali, sistem akan membangkitkan (<strong>throw</strong>) objek exception. Objek tersebut ditangkap (<strong>catch</strong>) oleh parameter blok penanganan yang berkesesuaian. Setelah evaluasi usai, blok <strong>finally</strong> dieksekusi sebagai rutinitas akhir.</p>
+<p class="text-gray-300 text-base">Blok <strong>try</strong> mengisolasi area eksekusi normal. Ketika terjadi anomali, sistem akan melempar (<strong>throw</strong>) objek exception. Objek tersebut ditangkap (<strong>catch</strong>) oleh parameter blok penanganan yang berkesesuaian. Setelah evaluasi usai, blok <strong>finally</strong> dieksekusi sebagai rutinitas akhir.</p>
 </div>
 
 <div class="bg-gray-800 bg-opacity-60 rounded-lg p-6 border border-blue-700">

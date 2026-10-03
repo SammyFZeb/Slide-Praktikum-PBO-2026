@@ -7,7 +7,7 @@ Meskipun Java menyediakan beragam class exception bawaan, pada <strong>arsitektu
 </p>
 
 <div class="border-l-4 border-blue-500 pl-5 space-y-3">
-<p class="font-bold text-blue-400 text-base">Studi Kasus: Layanan REST API</p>
+<p class="font-bold text-blue-400 text-base">Studi Kasus: Pengembangan REST API</p>
 <p>Dalam pengembangan antarmuka pemrograman aplikasi (API), entitas exception khusus sangat berguna untuk menyertakan <strong>Kode Status HTTP</strong> dan <strong>pesan respons</strong> terstruktur:</p>
 <ul class="space-y-2 mt-2 list-disc list-inside text-gray-300">
   <li>Entitas sumber daya tidak ditemukan</li>

@@ -10,7 +10,7 @@
 <div class="border-t border-gray-600 pt-2 mt-2">
 <p class="font-semibold text-cyan-300 text-xs uppercase tracking-wide mb-1">Contoh Skenario:</p>
 <ul class="space-y-1 list-disc list-inside text-gray-300">
-  <li>Kegagalan koneksi ke pangkalan data (Database)</li>
+  <li>Kegagalan koneksi ke database</li>
   <li>Operasi baca/tulis pada berkas yang tidak ditemukan</li>
   <li>Kegagalan pada transmisi jaringan</li>
 </ul>
@@ -20,7 +20,7 @@
 <div class="bg-gray-800 bg-opacity-60 rounded-xl p-5 border border-orange-800 text-sm leading-relaxed space-y-3">
 <h3 class="text-base font-bold text-orange-400 mb-2">Unchecked Exception</h3>
 
-<p>Kondisi ini <strong>lolos kompilasi namun memicu <i>crash</i> saat eksekusi (runtime)</strong> akibat <strong>kesalahan logika pemrograman</strong>. Lazim terjadi karena minimnya kedisiplinan <i>programmer</i>—terutama mereka yang menelan mentah-mentah kode dari AI tanpa memahaminya.</p>
+<p>Kondisi ini <strong>tidak wajib ditangani saat kompilasi</strong>. Umumnya disebabkan oleh <strong>kesalahan logika pemrograman</strong> yang baru terdeteksi pada saat eksekusi (runtime) dan kadang tidak disadari sejak awal.</p>
 
 <div class="border-t border-gray-600 pt-2 mt-2">
 <p class="font-semibold text-orange-300 text-xs uppercase tracking-wide mb-1">Contoh Skenario:</p>
