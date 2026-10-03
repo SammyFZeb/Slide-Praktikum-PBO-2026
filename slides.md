@@ -39,9 +39,7 @@ src: ./pages/4_Error vs Exception.md
 src: ./pages/5_Exception Handling Intro.md
 ---
 
----
-src: ./pages/6_Alur Exception Handling.md
----
+
 
 ---
 src: ./pages/7_Judul Hierarki Exception.md
