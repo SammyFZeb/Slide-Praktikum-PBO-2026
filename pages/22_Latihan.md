@@ -1,59 +1,38 @@
-# Latihan — Mesin ATM Sederhana
+# Latihan Praktikum: Sistem Reservasi
 
-<div class="grid grid-cols-2 gap-8 mt-4 text-sm">
+<div class="grid grid-cols-2 gap-8 mt-6">
 
-<div class="space-y-4">
+<div class="space-y-5 text-sm leading-relaxed">
 
-<p>Buatlah program Java yang mensimulasikan mesin ATM sederhana dengan ketentuan:</p>
+<p class="text-base text-gray-200">Buka *boilerplate* kode yang telah disediakan dan selesaikan instruksi berikut:</p>
 
-<div class="space-y-3">
+<div class="space-y-5 mt-4">
 
-<div class="border-l-2 border-blue-500 pl-3">
-<span class="font-bold">1. Custom Exception</span>
-<p class="text-xs text-gray-300 mt-0.5">
-Buat dua custom exception extending <code>RuntimeException</code>:<br>
-— <code>InsufficientBalanceException</code><br>
-— <code>InvalidAmountException</code>
-</p>
+<div class="border-l-4 border-blue-500 pl-4">
+<span class="font-bold text-blue-400 text-base">1. Pemahaman Struktur Kode</span>
+<p class="text-gray-300 mt-1">Pelajari mekanisme program secara hierarkis. <i>(Petunjuk: Urutan membaca yang disarankan adalah dari Entity, Repository, Service, kemudian class Main)</i>.</p>
 </div>
 
-<div class="border-l-2 border-emerald-500 pl-3">
-<span class="font-bold">2. Class ATM</span>
-<p class="text-xs text-gray-300 mt-0.5">
-Method <code>withdraw(double amount)</code> — gunakan <code>throw</code> untuk melempar exception sesuai kondisi.
-</p>
+<div class="border-l-4 border-emerald-500 pl-4">
+<span class="font-bold text-emerald-400 text-base">2. Fokus Implementasi</span>
+<p class="text-gray-300 mt-1">Implementasi penanganan dan pelemparan exception hanya perlu dilakukan pada kelas <code>ReservationService</code> dan <code>Main</code>.</p>
 </div>
 
-<div class="border-l-2 border-yellow-500 pl-3">
-<span class="font-bold">3. Program Utama dengan try-catch</span>
-<p class="text-xs text-gray-300 mt-0.5">
-Tangkap setiap exception dengan pesan yang sesuai. Gunakan <code>finally</code> untuk mencetak saldo akhir.
-</p>
+<div class="border-l-4 border-yellow-500 pl-4">
+<span class="font-bold text-yellow-400 text-base">3. Analisis Custom Exception</span>
+<p class="text-gray-300 mt-1">Berdasarkan perilaku metode <code>createReservation()</code>, lakukan analisis untuk menentukan dan membuat <i>custom exception</i> yang dibutuhkan oleh sistem.</p>
+</div>
+
+<div class="border-l-4 border-red-500 pl-4">
+<span class="font-bold text-red-400 text-base">4. Alokasi Waktu</span>
+<p class="text-gray-300 mt-1">Waktu pengerjaan dialokasikan selama <strong>20 menit</strong>.</p>
 </div>
 
 </div>
 </div>
 
-<div>
-<span class="text-xs font-mono uppercase text-gray-400 block mb-2">Contoh Output:</span>
-
-```
-=== MESIN ATM ===
-Saldo awal: Rp 1.000.000
-
-Percobaan tarik: Rp 500.000
-Penarikan berhasil.
-Saldo akhir: Rp 500.000
-
-Percobaan tarik: Rp 800.000
-Error: Saldo tidak mencukupi!
-Saldo akhir: Rp 500.000
-
-Percobaan tarik: Rp -100
-Error: Nominal tidak valid!
-Saldo akhir: Rp 500.000
-```
-
+<div class="flex items-center justify-center">
+  <img src="../asset/boilerplate_latihan.png" alt="Preview Boilerplate Latihan" class="rounded-xl shadow-lg border border-gray-700 w-full">
 </div>
 
 </div>
