@@ -28,39 +28,37 @@ public void executor() {
 
 ---
 
-# Method Umum yang Biasa Dipakai
+<h1 class="text-left">Method Umum yang Biasa Dipakai</h1>
 
 <div class="space-y-6 mt-8 text-left">
 
-<div class="grid grid-cols-2 gap-6">
+<div>
+<h4 class="text-emerald-400 font-mono text-base mb-2 font-bold">orElse(T args)</h4>
 
-<div class="bg-gray-800 bg-opacity-60 rounded-lg p-5 border border-gray-600">
-<h4 class="text-emerald-400 font-bold mb-2">1. Memeriksa Keberadaan Nilai</h4>
-<ul class="text-sm text-gray-300 space-y-2 list-disc list-inside">
-  <li><code>isPresent()</code>: Mengembalikan <i>true</i> jika ada isinya.</li>
-  <li><code>isEmpty()</code>: Mengembalikan <i>true</i> jika kosong (null).</li>
-  <li><code>ifPresent(action)</code>: Mengeksekusi blok kode <strong>hanya jika</strong> ada isinya.</li>
-</ul>
-</div>
-
-<div class="bg-gray-800 bg-opacity-60 rounded-lg p-5 border border-gray-600">
-<h4 class="text-blue-400 font-bold mb-2">2. Mengekstrak Nilai</h4>
-<ul class="text-sm text-gray-300 space-y-2 list-disc list-inside">
-  <li><code>get()</code>: Mengambil nilai (bisa <i>crash</i> jika kosong).</li>
-  <li><code>orElse(default)</code>: Mengambil nilai, atau pakai nilai <i>default</i> jika kosong.</li>
-  <li><code>orElseThrow()</code>: Melempar exception spesifik jika kosong.</li>
-</ul>
-</div>
-
+```java
+// Jika alamat tidak ada, gunakan alamat default 
+Address address = addressRepository.findByUserId(id)
+    .orElse(new Address("Jalan Default", "Jakarta"));
+```
 </div>
 
 <div>
-<h4 class="text-yellow-300 text-sm mb-2 font-bold">Contoh Penggunaan Bersih (Tanpa <i>if-else null</i>)</h4>
+<h4 class="text-blue-400 font-mono text-base mb-2 font-bold">orElseGet(Supplier&lt;? extends T&gt; other)</h4>
 
 ```java
-Optional<User> optUser = findUserById(id);
-// Hanya mencetak email jika usernya ditemukan (tidak peduli jika null)
-optUser.ifPresent(user -> System.out.println(user.getEmail()));
+// Jika user tidak ada di cache, ambil langsung dari database
+User user = userCache.findById(id)
+    .orElseGet(() -> userRepository.findById(id));
+```
+</div>
+
+<div>
+<h4 class="text-yellow-400 font-mono text-base mb-2 font-bold">ifPresent(Consumer&lt;? super T&gt; action)</h4>
+
+```java
+// Jika user ada, kirim email
+userRepository.findById(id)
+    .ifPresent(user -> emailService.send(user.getEmail()));
 ```
 </div>
 
