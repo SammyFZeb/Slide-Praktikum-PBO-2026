@@ -57,7 +57,6 @@
 <h3 class="text-base font-bold text-purple-400 mb-2">Custom Exception</h3>
 
 - Implementasi class exception kustom
-- Studi kasus: Exception pada REST API
 </div>
 
 </div>

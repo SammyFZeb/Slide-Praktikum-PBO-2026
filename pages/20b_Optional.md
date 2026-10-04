@@ -17,7 +17,7 @@ public Optional<User> findUserById(UUID id) {
 public void executor() {
   // Dalam bahasa manusia: "tolong execute findUserById(), kalau datanya ada simpan ke objek user,
   // atau kalau tidak, lempar exception"
-  Optional<User> user = findUserById("sembarang-uuid").orElseThrow(() -> new DataNotFoundException());
+  User user = findUserById("sembarang-uuid").orElseThrow(() -> new DataNotFoundException());
   System.out.println(user.getEmail());
 }
 ```
