@@ -1,0 +1,1 @@
+var e=`/Slide-Praktikum-PBO-2026/minggu-7/assets/boilerplate_latihan-bwnfUVkW.png`;export{e as t};
