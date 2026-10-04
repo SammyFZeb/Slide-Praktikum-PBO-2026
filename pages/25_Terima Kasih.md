@@ -5,7 +5,4 @@ class: text-center
 
 # Terima Kasih!
 
-Apakah Anda memiliki pertanyaan?
-Silakan sampaikan pertanyaan dan berdiskusi melalui kanal masing-masing pada platform Discord.
-
-Semoga materi pembelajaran hari ini dapat dipahami dan bermanfaat.
+Quote of the day? Percuma belajar integritas data di minggu 2 kalo di minggu 6 orang-orangnya gak punya integritas.

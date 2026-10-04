@@ -1,4 +1,4 @@
-# Tidak akan dibahas, tapi layak buat dipelajari:
+# Tidak akan dibahas, tapi layak untuk dipelajari:
 
 1. Java Generic
 2. Java Collection (Lumrah dipakai: `List<?>`, `Map<?, ?>`)

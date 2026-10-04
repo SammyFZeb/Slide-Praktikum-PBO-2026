@@ -7,7 +7,7 @@
 </div>
 
 <div>
-<h4>Overview Penggunaan</h4>
+<h4>Contoh Penggunaan (<span class="text-blue-400 font-mono text-base mb-2 font-bold">.orElseThrow()</span>)</h4>
 
 ```java
 public Optional<User> findUserById(UUID id) {
@@ -16,7 +16,7 @@ public Optional<User> findUserById(UUID id) {
 
 public void executor() {
   // Dalam bahasa manusia: "tolong execute findUserById(), kalau datanya ada simpan ke objek user,
-  // atau kalau tidak lempar exception"
+  // atau kalau tidak, lempar exception"
   Optional<User> user = findUserById("sembarang-uuid").orElseThrow(() -> new DataNotFoundException());
   System.out.println(user.getEmail());
 }
@@ -36,10 +36,10 @@ public void executor() {
 <h4 class="text-emerald-400 font-mono text-base mb-2 font-bold">orElse(T args)</h4>
 
 ```java
-// Jika alamat tidak ada, gunakan alamat default 
-Address address = addressRepository.findByUserId(id)
-    .orElse(new Address("Jalan Default", "Jakarta"));
+// Jika alamat tidak ada, gunakan alamat default
+Address address = addressRepository.findByUserId(id).orElse(new Address("Jl. Perdatam VI", "Jakarta Selatan"));
 ```
+
 </div>
 
 <div>
@@ -47,9 +47,9 @@ Address address = addressRepository.findByUserId(id)
 
 ```java
 // Jika user tidak ada di cache, ambil langsung dari database
-User user = userCache.findById(id)
-    .orElseGet(() -> userRepository.findById(id));
+User user = userCache.findById(id).orElseGet(() -> userRepository.findById(id));
 ```
+
 </div>
 
 <div>
@@ -57,9 +57,9 @@ User user = userCache.findById(id)
 
 ```java
 // Jika user ada, kirim email
-userRepository.findById(id)
-    .ifPresent(user -> emailService.send(user.getEmail()));
+userRepository.findById(id).ifPresent(user -> emailService.send(user.getEmail()));
 ```
+
 </div>
 
 </div>
