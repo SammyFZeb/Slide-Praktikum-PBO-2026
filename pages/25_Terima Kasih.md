@@ -5,4 +5,4 @@ class: text-center
 
 # Terima Kasih!
 
-Wise main once said, "Maaf kalo salah"
+Wise man once said, "Maaf kalo salah"
