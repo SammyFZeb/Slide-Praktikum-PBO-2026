@@ -22,19 +22,19 @@
 <div>
 
 ```java
-// Menandai method ini bisa melempar IOException
-public static String bacaFile(String path)
-        throws IOException {
-    return Files.readString(Path.of(path));
-}
+public class Main {
+    // Menandai method ini bisa melempar Exception
+    public static String readFile(String path) throws IOException {
+        return Files.readString(Path.of("src/main/resources", path));
+    }
 
-// Pemanggil WAJIB menangani exception
-public static void main(String[] args) {
-    try {
-        String isi = bacaFile("data.txt");
-        System.out.println(isi);
-    } catch (IOException e) {
-        System.out.println("Gagal: " + e.getMessage());
+    public static void main(String[] args) {
+        try {
+            String isi = readFile("log.txt");
+            System.out.println(isi);
+        } catch (IOException e) {
+            System.out.println("Gagal: " + e.getMessage());
+        }
     }
 }
 ```
