@@ -11,9 +11,7 @@ Menjalankan Main akan menyimpan data user ke database, lalu menampilkan username
 </div>
 
 <div class="flex justify-center items-center">
-  <div class="border-2 border-dashed border-gray-400 dark:border-gray-600 rounded-xl px-12 py-16 text-gray-500">
-    <p class="text-center text-sm">[ Tempat screenshot hasil eksekusi program ]</p>
-  </div>
+    <img src="../asset/hasil-run.png" alt="Ilustrasi Connection Pool" class="max-h-72 object-contain shadow-md rounded-lg" />
 </div>
 
 </div>
