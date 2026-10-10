@@ -19,7 +19,7 @@ import java.sql.SQLException;
 public class Main {
     public static void main(String[] args) {
         try (Connection conn = DatabaseConnection.getConnection()) {
-            User user = new User(0, "banung", "ayojadiasprak", "banung@gmail.com", "user");
+            User user = new User("banung", "ayojadiasprak", "banung@gmail.com", "user");
 
             user.registerUser(conn);
 
