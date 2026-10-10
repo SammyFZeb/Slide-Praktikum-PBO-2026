@@ -8,12 +8,13 @@ layout: default
 
 <div class="text-sm leading-normal">
 Mengirim perintah INSERT dengan PreparedStatement.
+
+Tanda `?` adalah *placeholder* yang diisi lewat `setString()`, sehingga terhindar dari SQL Injection.
 </div>
 
 <div class="text-[0.72rem] leading-tight">
 
 ```java
-    // Input ke Database
     public int registerUser(Connection conn) throws SQLException {
         // Menerima koneksi dari luar (Transactional)
         String sql = "INSERT INTO users (username, password, email, role) VALUES (?, ?, ?, ?)";
@@ -34,6 +35,5 @@ Mengirim perintah INSERT dengan PreparedStatement.
         return 0;
     }
 ```
-Tanda `?` adalah *placeholder* yang diisi lewat `setString()`, sehingga terhindar dari SQL Injection.
 </div>
 </div>
