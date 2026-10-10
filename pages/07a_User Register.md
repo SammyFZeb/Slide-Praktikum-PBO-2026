@@ -1,13 +1,23 @@
+---
+layout: default
+---
+
 # `User`: Menyimpan Data (Insert)
 
-<p class="text-sm text-gray-300 mb-4 mt-4">Mengirim perintah <code>INSERT</code> menggunakan <code>PreparedStatement</code>.</p>
+<div class="grid grid-cols-[40%_55%] gap-6">
 
-<div class="mt-4 w-full">
+<div class="text-sm leading-normal">
+Mengirim perintah `INSERT` dengan `PreparedStatement`.
+
+Tanda `?` adalah *placeholder* yang diisi lewat `setString()`, sehingga terhindar dari SQL Injection.
+</div>
+
+<div class="text-[0.72rem] leading-tight">
 
 ```java
     // Input ke Database
     public int registerUser(Connection conn) throws SQLException {
-        // Method ini menerima koneksi dari luar (Transactional) agar sinkron dengan insert Karyawan
+        // Menerima koneksi dari luar (Transactional)
         String sql = "INSERT INTO users (username, password, email, role) VALUES (?, ?, ?, ?)";
         try (PreparedStatement pst = conn.prepareStatement(sql)) {
             pst.setString(1, this.username);
@@ -27,4 +37,5 @@
     }
 ```
 
+</div>
 </div>

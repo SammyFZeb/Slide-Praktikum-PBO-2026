@@ -1,8 +1,20 @@
-# Implementasi Koneksi: `DatabaseConnection`
+---
+layout: default
+---
 
-<p class="text-sm text-gray-300 mb-4 mt-4">Class utilitas yang membuka dan mengelola satu koneksi ke database.</p>
+# Implementasi Koneksi Database
 
-<div class="mt-4 w-full">
+<div class="grid grid-cols-[40%_55%] gap-6">
+
+<div class="text-sm leading-normal space-y-3">
+Class `DatabaseConnection` bertanggung jawab membuka dan mengelola satu koneksi ke database.
+
+- `URL`, `USER`, `PASS` disimpan sebagai konstanta.
+- Koneksi dibuat sekali, lalu dipakai ulang selama belum tertutup.
+- `DriverManager.getConnection()` membuka koneksi fisik.
+</div>
+
+<div class="text-[0.72rem] leading-tight">
 
 ```java
 import java.sql.Connection;
@@ -30,4 +42,5 @@ public class DatabaseConnection {
 }
 ```
 
+</div>
 </div>

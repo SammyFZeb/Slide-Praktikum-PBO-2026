@@ -1,8 +1,18 @@
+---
+layout: default
+---
+
 # Model `User`
 
-<p class="text-sm text-gray-300 mb-4 mt-4">Representasi tabel <code>users</code> sebagai object Java.</p>
+<div class="grid grid-cols-[40%_55%] gap-6">
 
-<div class="mt-4 w-full">
+<div class="text-sm leading-normal">
+Representasi tabel `users` sebagai object Java.
+
+Atribut class menyesuaikan kolom pada tabel, dan `idUser` diisi setelah data berhasil disimpan ke database.
+</div>
+
+<div class="text-[0.72rem] leading-tight">
 
 ```java
 import java.sql.*;
@@ -25,4 +35,5 @@ public class User {
 }
 ```
 
+</div>
 </div>

@@ -1,6 +1,18 @@
+---
+layout: default
+---
+
 # Menjalankan Program (`Main`)
 
-<div class="mt-6 w-full">
+<div class="grid grid-cols-[40%_55%] gap-6">
+
+<div class="text-sm leading-normal">
+Koneksi dibuka dengan *try-with-resources* agar otomatis ditutup (`close`) setelah selesai.
+
+Program menyimpan user baru, lalu membaca kembali username berdasarkan ID-nya.
+</div>
+
+<div class="text-[0.72rem] leading-tight">
 
 ```java
 import java.sql.Connection;
@@ -28,4 +40,5 @@ public class Main {
 }
 ```
 
+</div>
 </div>
