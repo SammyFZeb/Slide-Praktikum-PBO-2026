@@ -4,10 +4,10 @@ layout: default
 
 # Implementasi Koneksi Database
 
-<div class="grid grid-cols-[40%_55%] gap-6">
+<div class="grid grid-cols-[35%_67%] gap-4">
 
 <div class="text-sm leading-normal space-y-3">
-Class `DatabaseConnection` bertanggung jawab membuka dan mengelola satu koneksi ke database.
+Class DatabaseConnection bertanggung jawab membuka dan mengelola satu koneksi ke database.
 
 - `URL`, `USER`, `PASS` disimpan sebagai konstanta.
 - Koneksi dibuat sekali, lalu dipakai ulang selama belum tertutup.

@@ -4,10 +4,10 @@ layout: default
 
 # Model `User`
 
-<div class="grid grid-cols-[40%_55%] gap-6">
+<div class="gap-4">
 
 <div class="text-sm leading-normal">
-Representasi tabel `users` sebagai object Java.
+Representasi tabel users sebagai object Java.
 
 Atribut class menyesuaikan kolom pada tabel, dan `idUser` diisi setelah data berhasil disimpan ke database.
 </div>

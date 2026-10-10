@@ -4,10 +4,10 @@ layout: default
 
 # `User`: Membaca Data (Select)
 
-<div class="grid grid-cols-[40%_55%] gap-6">
+<div class="gap-4">
 
 <div class="text-sm leading-normal">
-Menjalankan `SELECT` dan membaca hasilnya dari `ResultSet`.
+Menjalankan SELECT dan membaca hasilnya dari ResultSet.
 
 `rs.next()` memindahkan kursor ke baris berikutnya; bila tidak ada baris, method mengembalikan `null`.
 </div>

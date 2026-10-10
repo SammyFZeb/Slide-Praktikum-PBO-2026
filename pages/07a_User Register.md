@@ -4,12 +4,10 @@ layout: default
 
 # `User`: Menyimpan Data (Insert)
 
-<div class="grid grid-cols-[40%_55%] gap-6">
+<div class="gap-4">
 
 <div class="text-sm leading-normal">
-Mengirim perintah `INSERT` dengan `PreparedStatement`.
-
-Tanda `?` adalah *placeholder* yang diisi lewat `setString()`, sehingga terhindar dari SQL Injection.
+Mengirim perintah INSERT dengan PreparedStatement.
 </div>
 
 <div class="text-[0.72rem] leading-tight">
@@ -36,6 +34,6 @@ Tanda `?` adalah *placeholder* yang diisi lewat `setString()`, sehingga terhinda
         return 0;
     }
 ```
-
+Tanda `?` adalah *placeholder* yang diisi lewat `setString()`, sehingga terhindar dari SQL Injection.
 </div>
 </div>

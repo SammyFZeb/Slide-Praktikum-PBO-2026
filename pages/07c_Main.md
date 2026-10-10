@@ -4,11 +4,9 @@ layout: default
 
 # Menjalankan Program (`Main`)
 
-<div class="grid grid-cols-[40%_55%] gap-6">
+<div class="">
 
 <div class="text-sm leading-normal">
-Koneksi dibuka dengan *try-with-resources* agar otomatis ditutup (`close`) setelah selesai.
-
 Program menyimpan user baru, lalu membaca kembali username berdasarkan ID-nya.
 </div>
 
