@@ -90,5 +90,13 @@ src: ./pages/27_Latihan.md
 
 ---
 ---
+src: ./pages/28_Cover Tugas.md 
+
+---
+---
+src: ./pages/28a_Instruksi Tugas.md 
+
+---
+---
 src: ./pages/29_Terima Kasih.md 
 ---
