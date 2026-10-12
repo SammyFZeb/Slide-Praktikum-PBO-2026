@@ -17,9 +17,10 @@ Menjalankan SELECT dan membaca hasilnya dari ResultSet.
 ```java
     public String getUsernameById(Connection conn, int idUser) throws SQLException {
         String sql = "SELECT username FROM users WHERE id_user = ?";
-
+        int id = 1;
+        
         try (PreparedStatement pst = conn.prepareStatement(sql)) {
-            pst.setInt(1, idUser);
+            pst.setInt(id, idUser);
 
             try (ResultSet rs = pst.executeQuery()) {
                 if (rs.next()) {
