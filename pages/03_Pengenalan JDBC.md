@@ -19,6 +19,10 @@ layout: default
 JDBC menyediakan satu antarmuka seragam, sehingga kode program tidak perlu mengetahui detail tiap DBMS (MySQL, PostgreSQL, Oracle).
 
 Agar dapat terhubung, diperlukan <b>JDBC driver</b> sesuai DBMS yang dipakai, umumnya berbentuk file `.jar`.
+
+Link download JDBC driver untuk MySQL: https://dev.mysql.com/downloads/connector/j/
+
+Gunakan Versi 8.2.0 ke atas, Install saja yg terbaru 9.5.0. Install ZIPnya dan extract JAR file yang ada dalam ZIP
 </div>
 
 </div>
