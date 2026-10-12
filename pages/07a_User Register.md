@@ -18,7 +18,7 @@ Tanda `?` adalah *placeholder* yang diisi lewat `setString()`, sehingga terhinda
     public int registerUser(Connection conn) throws SQLException {
         // Menerima koneksi dari luar (Transactional)
         String sql = "INSERT INTO users (username, password, email, role) VALUES (?, ?, ?, ?)";
-        try (PreparedStatement pst = conn.prepareStatement(sql)) {
+        try (PreparedStatement pst = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
             pst.setString(1, this.username);
             pst.setString(2, this.password);
             pst.setString(3, this.email);
