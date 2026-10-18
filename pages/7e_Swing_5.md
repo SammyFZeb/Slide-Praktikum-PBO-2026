@@ -15,7 +15,7 @@ layout: default
   <img
     src="../asset/9_double_click.png"
     alt="Method event handler tombol Hitung Nilai di NetBeans"
-    class="w-72 max-h-14 object-contain rounded border border-gray-300 dark:border-gray-700"
+    class="w-[28rem] max-h-[24vh] object-contain rounded border border-gray-300 dark:border-gray-700"
   />
 </div>
 
@@ -24,32 +24,51 @@ layout: default
   Masukkan kode berikut ke dalam method <code>btnHitungActionPerformed</code>:
 </p>
 
-<div class="text-xs leading-tight">
+<div class="code-scroll text-[10] leading-tight">
 
 ```java
 try {
-    String nama = txtNama.getText();
+    String nama = fieldNama.getText();
     if (nama.isEmpty()) {
         javax.swing.JOptionPane.showMessageDialog(this, "Nama tidak boleh kosong!");
+        fieldNama.requestFocus();
         return;
     }
 
-    double nilaiTugas = Double.parseDouble(txtTugas.getText());
-    double nilaiUts = Double.parseDouble(txtUts.getText());
-    double nilaiUas = Double.parseDouble(txtUas.getText());
-    double nilaiAkhir = nilaiTugas * 0.3 + nilaiUts * 0.3 + nilaiUas * 0.4;
+    double nilaiTugas = Double.parseDouble(fieldTugas.getText());
+    double nilaiUts = Double.parseDouble(fieldUts.getText());
+    double nilaiUas = Double.parseDouble(fieldUas.getText());
+
+    double nilaiAkhir = (nilaiTugas * 0.3) + (nilaiUts * 0.3) + (nilaiUas * 0.4);
 
     String grade;
-    if (nilaiAkhir >= 80) grade = "A";
-    else if (nilaiAkhir >= 70) grade = "B";
-    else if (nilaiAkhir >= 60) grade = "C";
-    else if (nilaiAkhir >= 50) grade = "D";
-    else grade = "E";
+    if (nilaiAkhir >= 80) {
+        grade = "A";
+    } else if (nilaiAkhir >= 70) {
+        grade = "B";
+    } else if (nilaiAkhir >= 60) {
+        grade = "C";
+    } else if (nilaiAkhir >= 50) {
+        grade = "D";
+    } else {
+        grade = "E";
+    }
+    
+    String hasilOutput = "=========================\n"
+            + "    HASIL PERHITUNGAN    \n"
+            + "=========================\n"
+            + "Nama Mahasiswa : " + nama + "\n"
+            + "Nilai Akhir    : " + String.format("%.2f", nilaiAkhir) + "\n"
+            + "Grade          : " + grade + "\n"
+            + "=========================";
 
-    lblHasil.setText("<html>Mahasiswa: <b>" + nama + "</b> | Nilai Akhir: <b>"
-            + nilaiAkhir + "</b> | Grade: <b>" + grade + "</b></html>");
+    txtAreaHasil.setText(hasilOutput);
+
 } catch (NumberFormatException e) {
-    javax.swing.JOptionPane.showMessageDialog(this, "Masukkan angka yang valid untuk nilai!");
+    javax.swing.JOptionPane.showMessageDialog(this,
+            "Input nilai harus berupa angka!",
+            "Validasi Error",
+            javax.swing.JOptionPane.ERROR_MESSAGE);
 }
 ```
 
@@ -58,8 +77,20 @@ try {
 </div>
 
 <style>
-pre {
-  font-size: 8px !important;
+.code-scroll {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+}
+
+.code-scroll pre {
+  box-sizing: border-box;
+  max-width: 100%;
+  font-size: 10px !important;
   line-height: 1.2 !important;
+  max-height: 28vh;
+  overflow: auto;
+  white-space: pre;
 }
 </style>

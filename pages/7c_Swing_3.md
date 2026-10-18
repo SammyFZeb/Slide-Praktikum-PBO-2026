@@ -15,7 +15,7 @@ layout: default
     </div>
     <!-- Placeholder Gambar -->
     <div class="flex justify-center flex-grow">
-        <img src="../asset/5_class.png" alt="Buat Nama Form Class" class="w-full object-cover shadow-md rounded-lg border border-gray-300 dark:border-gray-700" />
+        <img src="../asset/5_class_maven.png" alt="Buat Nama Form Class" class="w-full object-cover shadow-md rounded-lg border border-gray-300 dark:border-gray-700" />
     </div>
 </div>
 
@@ -24,11 +24,11 @@ layout: default
     <!-- Teks Instruksi -->
     <div class="text-[0.9rem] leading-normal">
         <h3 class="text-base font-bold text-orange-400 mb-2">6. Masukkan Komponen</h3>
-        Dengan <b>Palette</b> yang ada di sebelah kanan Netbeans, buatlah 5 <b>JLabel</b> ("Nama Mahasiswa", "Nilai Tugas", "Nilai UTS", "Nilai UAS", dan 1 label kosongan untuk output). Buatlah juga 4 <b>JTextField</b> dan 2 <b>JButton</b> ("Hitung Nilai" dan "Reset").
+        Dengan <b>Palette</b> yang ada di sebelah kanan Netbeans, buatlah 5 <b>JLabel</b> ("Nama Mahasiswa", "Nilai Tugas", "Nilai UTS", "Nilai UAS", "Title"). Buatlah juga 4 <b>JTextField</b> dan 2 <b>JButton</b> ("Hitung Nilai" dan "Reset"). Terakhir, buat 1 Text Area
     </div>
     <!-- Placeholder Gambar -->
     <div class="flex justify-center flex-grow">
-        <img src="../asset/6_komponen.png" alt="Buat Komponen (5 JLabel, 4 JTextField, 2 JButton)" class="w-full object-cover shadow-md rounded-lg border border-gray-300 dark:border-gray-700" />
+        <img src="../asset/6_komponen_maven.png" alt="Buat Komponen (5 JLabel, 4 JTextField, 2 JButton)" class="w-full object-cover shadow-md rounded-lg border border-gray-300 dark:border-gray-700" />
     </div>
 </div>
 

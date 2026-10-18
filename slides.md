@@ -4,9 +4,7 @@ title: "Praktikum PBO - Pertemuan 9: Java Swing"
 info: |
   Materi praktikum Pemrograman Berorientasi Objek tentang NetBeans dan Java Swing.
 duration: 35min
----
 
----
 src: ./pages/1_Cover_Materi.md
 ---
 
@@ -51,7 +49,11 @@ src: ./pages/7e_Swing_5.md
 ---
 
 ---
-src: ./pages/7f_Swing_6.md
+src: ./pages/7f_Swing_6a.md
+---
+
+---
+src: ./pages/7f_Swing_6b.md
 ---
 
 ---

@@ -15,7 +15,7 @@ layout: default
     </div>
     <!-- Placeholder Gambar -->
     <div class="flex justify-center flex-grow">
-        <img src="../asset/7_change_variable.png" alt="Ganti Nama Variabel Komponen" class="w-full object-cover shadow-md rounded-lg border border-gray-300 dark:border-gray-700" />
+        <img src="../asset/7_change_variable_maven.png" alt="Ganti Nama Variabel Komponen" class="w-full object-cover shadow-md rounded-lg border border-gray-300 dark:border-gray-700" />
     </div>
 </div>
 
@@ -24,11 +24,11 @@ layout: default
     <!-- Teks Instruksi -->
     <div class="text-[0.9rem] leading-normal">
         <h3 class="text-base font-bold text-orange-400 mb-2">8. Masukkan Nama Komponen Baru</h3>
-        Tentukan nama-nama komponen baru menjadi <b>txtNama, txtTugas, txtUts, txtUas, btnHitung, btnReset, dan lblHasil.</b>
+        Tentukan nama-nama komponen baru menjadi <b>fieldNama, fieldTugas, fieldUts, fieldUas, btnHitung, btnReset, dan txtAreaHasil.</b>
     </div>
     <!-- Placeholder Gambar -->
     <div class="flex justify-center flex-grow">
-        <img src="../asset/8_new_name.png" alt="Tentukan Nama Baru Komponen" class="w-full object-cover shadow-md rounded-lg border border-gray-300 dark:border-gray-700" />
+        <img src="../asset/8_new_name_maven.png" alt="Tentukan Nama Baru Komponen" class="w-full object-cover shadow-md rounded-lg border border-gray-300 dark:border-gray-700" />
     </div>
 </div>
 

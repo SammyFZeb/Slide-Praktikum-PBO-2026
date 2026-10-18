@@ -17,13 +17,12 @@ layout: default
 <div class="flex justify-center flex-grow">
         
 ```java
-txtNama.setText("");
-        txtTugas.setText("");
-        txtUts.setText("");
-        txtUas.setText("");
-        lblHasil.setText("");
-
-        txtNama.requestFocus();
+fieldNama.setText("");
+fieldTugas.setText("");
+fieldUts.setText("");
+fieldUas.setText("");
+txtAreaHasil.setText(""); 
+fieldNama.requestFocus();
 ```
   
 </div>
@@ -33,13 +32,21 @@ txtNama.setText("");
 <div class="flex flex-col space-y-4">
     <!-- Teks Instruksi -->
     <div class="text-[0.9rem] leading-normal">
-        <h3 class="text-base font-bold text-orange-400 mb-2">12. Jalankan Program</h3>
-        Tekan tombol shortcut keyboard <b>Shift + F6</b> (atau <b>Shift + Fn + F6</b>) untuk menjalankan kode. Kalian juga bisa klik kanan pada mode <i>Source</i> dan klik <b>Run File</b>.
+        <h3 class="text-base font-bold text-orange-400 mb-2">12. Modifikasi File Main</h3>
+        Modifikasi isi dari fungsi main pada file yang sama dengan nama project<b>(Misal SistemNilaiMahasiswa.java)</b> dengan kode berikut
     </div>
-    <!-- Placeholder Gambar -->
-    <div class="flex justify-center flex-grow">
-        <img src="../asset/10_run.png" alt="Menjalankan Program" class="w-full object-cover shadow-md rounded-lg border border-gray-300 dark:border-gray-700" />
-    </div>
+<div class="code-scroll max-h-[40vh] max-w-full min-w-0 overflow-x-auto">
+
+```java
+public class SistemNilaiMahasiswa {
+
+    public static void main(String[] args) {
+        java.awt.EventQueue.invokeLater(() -> new MahasiswaFrame().setVisible(true));
+    }
+}
+```
+  
+</div>
 </div>
 
 </div>

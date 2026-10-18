@@ -15,7 +15,7 @@ layout: default
     </div>
     <!-- Placeholder Gambar -->
     <div class="flex justify-center flex-grow">
-        <img src="../asset/3_nama_project.png" alt="Buat Nama Project" class="w-full object-cover shadow-md rounded-lg border border-gray-300 dark:border-gray-700" />
+        <img src="../asset/3_nama_project_maven.png" alt="Buat Nama Project" class="w-full object-cover shadow-md rounded-lg border border-gray-300 dark:border-gray-700" />
     </div>
 </div>
 
