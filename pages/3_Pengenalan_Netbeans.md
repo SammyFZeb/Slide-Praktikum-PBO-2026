@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Pengenalan JDBC
+# Pengenalan Netbeans
 
 <div class="grid grid-cols-[55%_40%] gap-8 mt-4">
 
