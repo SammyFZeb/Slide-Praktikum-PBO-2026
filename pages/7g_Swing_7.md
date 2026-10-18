@@ -11,7 +11,7 @@ layout: default
     <!-- Teks Instruksi -->
     <div class="text-[0.9rem] leading-normal">
         <h3 class="text-base font-bold text-orange-400 mb-2">15. Uji Coba Validasi</h3>
-        Uji coba semua validasi inputan yang sudah dibuat seperti mengosongkan field nama mahasiswa.
+        Uji coba semua validasi inputan yang sudah dibuat seperti mengosongkan field nama mahasiswa dan input field nilai yang harus berupa angka.
     </div>
     <!-- Placeholder Gambar -->
     <div class="flex justify-center flex-grow">

@@ -59,3 +59,23 @@ src: ./pages/7f_Swing_6b.md
 ---
 src: ./pages/7g_Swing_7.md
 ---
+
+---
+src: ./pages/8_Cover_Latihan.md
+---
+
+---
+src: ./pages/9_Latihan.md
+---
+
+---
+src: ./pages/10_Cover_Tugas.md
+---
+
+---
+src: ./pages/11_Instruksi_Tugas.md
+---
+
+---
+src: ./pages/12_Terima_Kasih.md
+---
