@@ -24,11 +24,11 @@ layout: default
     <!-- Teks Instruksi -->
     <div class="text-[0.9rem] leading-normal">
         <h3 class="text-base font-bold text-orange-400 mb-2">2. Pilih Project</h3>
-        Pada kategori, pilih <b>Java with Ant</b>, kemudian pilih <b>Java Application</b>. Klik <b>Next</b>.
+        Pada kategori, pilih <b>Java with Maven</b>, kemudian pilih <b>Java Application</b>. Klik <b>Next</b>.
     </div>
     <!-- Placeholder Gambar -->
     <div class="flex justify-center flex-grow">
-        <img src="../asset/2_pilih_maven.png" alt="Pilih Java with Ant" class="w-full object-cover shadow-md rounded-lg border border-gray-300 dark:border-gray-700" />
+        <img src="../asset/2_pilih_maven.png" alt="Pilih Java with Maven" class="w-full object-cover shadow-md rounded-lg border border-gray-300 dark:border-gray-700" />
     </div>
 </div>
 

@@ -1,5 +1,5 @@
 ---
-theme: seriph
+theme: default
 title: "Praktikum PBO - Pertemuan 9: Java Swing"
 info: |
   Materi praktikum Pemrograman Berorientasi Objek tentang NetBeans dan Java Swing.
