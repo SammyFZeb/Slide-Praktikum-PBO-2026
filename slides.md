@@ -13,7 +13,7 @@ title: Materi 09 - PBO
 titleTemplate: '%s'
 download: true
 # filename of the export file
-exportFilename: 'materi-pbo-09'
+exportFilename: 'Materi 09 - PBO'
 colorScheme: 'dark'
 ---
 
