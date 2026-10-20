@@ -1,25 +1,20 @@
 ---
 theme: default
 highlighter: shiki
-#> Slide info
-info: |
-  # Materi 09 - PBO
-  Netbeans dan Java Swing
-
-  > Asisten Praktikum Pemrograman Berbasis Objek 2026  
-  > Teknik Informatika Universitas Padjadjaran
-
-#> Slide settings
-title: 'materi-pbo-09'
 lineNumbers: false
+info: |
+  ## Praktikum PBO Pertemuan 9
+  Asisten Praktikum Pemrograman Berorientasi Objek 2026.
+  Teknik Informatika Universitas Padjadjaran.
 drawings:
   persist: false
-download: 'materi-pbo-09.pdf'
-exportFilename: 'materi-pbo-09'
 css: unocss
-fonts:
-  sans: 'Overpass'
-  mono: 'Overpass Mono'
+title: Materi 09 - PBO
+titleTemplate: '%s'
+download: true
+# filename of the export file
+exportFilename: 'materi-pbo-09'
+colorScheme: 'dark'
 ---
 
 # Praktikum<br>Pemrograman<br>Berorientasi Objek
