@@ -14,7 +14,7 @@ title: 'materi-pbo-09'
 lineNumbers: false
 drawings:
   persist: false
-download: true
+download: 'materi-pbo-09.pdf'
 exportFilename: 'materi-pbo-09'
 css: unocss
 fonts:
