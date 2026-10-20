@@ -1,10 +1,31 @@
 ---
 theme: default
-title: "Praktikum PBO - Pertemuan 9: Java Swing"
+highlighter: shiki
+#> Slide info
 info: |
-  Materi praktikum Pemrograman Berorientasi Objek tentang NetBeans dan Java Swing.
-duration: 35min
+  # Materi 09 - PBO
+  Netbeans dan Java Swing
 
+  > Asisten Praktikum Pemrograman Berbasis Objek 2026  
+  > Teknik Informatika Universitas Padjadjaran
+
+#> Slide settings
+lineNumbers: false
+drawings:
+  persist: false
+download: true
+exportFilename: 'materi-pbo-09'
+css: unocss
+fonts:
+  sans: 'Overpass'
+  mono: 'Overpass Mono'
+---
+
+# Praktikum<br>Pemrograman<br>Berorientasi Objek
+
+**Pertemuan 9**
+
+---
 src: ./pages/1_Cover_Materi.md
 ---
 
@@ -77,5 +98,9 @@ src: ./pages/11_Instruksi_Tugas.md
 ---
 
 ---
-src: ./pages/12_Terima_Kasih.md
+src: ./pages/12_Deadline_Pengumpulan.md
+---
+
+---
+src: ./pages/13_Terima_Kasih.md
 ---

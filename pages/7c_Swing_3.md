@@ -24,7 +24,7 @@ layout: default
     <!-- Teks Instruksi -->
     <div class="text-[0.9rem] leading-normal">
         <h3 class="text-base font-bold text-orange-400 mb-2">6. Masukkan Komponen</h3>
-        Dengan <b>Palette</b> yang ada di sebelah kanan Netbeans, buatlah 5 <b>JLabel</b> ("Nama Mahasiswa", "Nilai Tugas", "Nilai UTS", "Nilai UAS", "Title"). Buatlah juga 4 <b>JTextField</b> dan 2 <b>JButton</b> ("Hitung Nilai" dan "Reset"). Terakhir, buat 1 Text Area
+        Dengan <b>Palette</b> yang ada di sebelah kanan Netbeans, buatlah 5 <b>JLabel</b> ("Nama Mahasiswa", "Nilai Tugas", "Nilai UTS", "Nilai UAS", "Title"). Buatlah juga 4 <b>JTextField</b> dan 2 <b>JButton</b> ("Hitung Nilai" dan "Reset"). Terakhir, buat 1 Text Area untuk output.
     </div>
     <!-- Placeholder Gambar -->
     <div class="flex justify-center flex-grow">
